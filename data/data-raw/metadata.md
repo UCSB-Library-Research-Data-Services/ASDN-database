@@ -480,38 +480,39 @@ records.
 - `ASDN_feather_sample`	Whether feathers were collected for the ASDN archive (y = yes, n or blank = no)
 feathers_coll	Which feathers were collected for ASDN archive. Coded as: number of the feather taken (e.g. 1), first letter of the type of feather taken (e.g. p for primary), and wing from which feather was taken (e.g. L for left): 1pL. brst = breast feather(s) taken. y = feathers collected but no info on which feathers. n or blank = no feathers collected.
 - `moss_feather_sample`	Whether 3-5 breast feathers were collected for moss dispersal side-project (y or n).
-fecal_sample	Whether fecal sample was collected (passive sampling by placing bird in box for few minutes) for gut microbiota side-project (y or n).
-fecal_sample_pres	What type of preservative was used for fecal sample; numbers indicate proofs of the indicated chemical. n = no sample collected.
-AI_swab	Whether cloaca was swabbed for avian influenza testing (y or n).
-AI_sample_num	Avian influenza sample number, if applicable, for internal use.
-AI_sample_type	Type of sample taken for avian influenca, if applicable. op = oropharyngeal, both = oropharyngeal and cloacal.
-malaria_plasma	Whether a blood plasma sample was taken for malaria testing (y or n).
-malaria_RBC	Whether a red blood cell sample was taken for malaria testing (y or n)
-malaria_rbcpres	Type of preservative for malaria red blood cell sample (longmire).
-RNALater_blood	Whether a blood sample was taken for RNALater analysis (y or n).
-RNALater_cap	Capillary tube type used for the RNALater blood sample (heparin or plain).
-blood_pres	Preservative used for other types of blood samples (longmire or lysis).
-blood_cap	Capillary tube type used for any additional blood sample (EDTA or plain).
-MethylHg_blood	Whether a blood sample was taken for methyl mercury testing (y or n).
-ChickEggNum	Number of egg or chick from a particular nest (1 through 4); sometimes includes the nest ID; used for internal reference.
-Chick_sample	Sample number for any tissues taken from chick, if applicable; used for internal reference.
-Chick_sample_type	Type of tissue sample taken from chick, if applicable. "Specimen" indicates the whole chick was preserved.
-Comments	Any further field or data-management notes relevant to this record.  "ELW note" indicates data-management comment added by Emily Weiser; other notes are from field crews and site PIs.
+- `fecal_sample`	Whether fecal sample was collected (passive sampling by placing bird in box for few minutes) for gut microbiota side-project (y or n).
+- `fecal_sample_pres`	What type of preservative was used for fecal sample; numbers indicate proofs of the indicated chemical. n = no sample collected.
+- `AI_swab`	Whether cloaca was swabbed for avian influenza testing (y or n).
+- `AI_sample_num`	Avian influenza sample number, if applicable, for internal use.
+- `AI_sample_type`	Type of sample taken for avian influenca, if applicable. op = oropharyngeal, both = oropharyngeal and cloacal.
+- `malaria_plasma`	Whether a blood plasma sample was taken for malaria testing (y or n).
+- `malaria_RBC`	Whether a red blood cell sample was taken for malaria testing (y or n)
+- `malaria_rbcpres`	Type of preservative for malaria red blood cell sample (longmire).
+- `RNALater_blood`	Whether a blood sample was taken for RNALater analysis (y or n).
+- `RNALater_cap`	Capillary tube type used for the RNALater blood sample (heparin or plain).
+- `blood_pres`	Preservative used for other types of blood samples (longmire or lysis).
+- `blood_cap`	Capillary tube type used for any additional blood sample (EDTA or plain).
+- `MethylHg_blood`	Whether a blood sample was taken for methyl mercury testing (y or n).
+- `ChickEggNum`	Number of egg or chick from a particular nest (1 through 4); sometimes includes the nest ID; used for internal reference.
+- `Chick_sample`	Sample number for any tissues taken from chick, if applicable; used for internal reference.
+- `Chick_sample_type`	Type of tissue sample taken from chick, if applicable. "Specimen" indicates the whole chick was preserved.
+- `Comments`	Any further field or data-management notes relevant to this record.  "ELW note" indicates data-management comment added by Emily Weiser; other notes are from field crews and site PIs.
 
 
 ### Bird_eggs
 
 Measurements (length and width) of shorebird eggs
 
-Column name	Definition
-Year	Year in which data were collected
-Site	Four-letter code of site at which data were collected. 
-Nest_ID	Unique identifier of the nest from which the egg was measured
-Egg_num	Egg number within the nest (usually an arbitrary designation)
-Length	Length of the egg at the longest point, in mm
-Width	Width of the egg at the widest point, in mm
-Book_page	Data book and page number in which the data were recorded; not used by all sites
-Comments	Any relevant notes on the egg or measurements
+**Column name	Definition**
+
+- `Year`	Year in which data were collected
+- `Site`	Four-letter code of site at which data were collected. 
+- `Nest_ID`	Unique identifier of the nest from which the egg was measured
+- `Egg_num`	Egg number within the nest (usually an arbitrary designation)
+- `Length`	Length of the egg at the longest point, in mm
+- `Width`	Width of the egg at the widest point, in mm
+- `Book_page`	Data book and page number in which the data were recorded; not used by all sites
+- `Comments`	Any relevant notes on the egg or measurements
 
 
 ### Bird_nests
