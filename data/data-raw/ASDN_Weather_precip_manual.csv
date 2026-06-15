@@ -1,0 +1,309 @@
+Site,Year,Date,Precip,Notes
+cakr,2014,21-May-14,0,
+cakr,2014,22-May-14,0,
+cakr,2014,23-May-14,0,
+cakr,2014,24-May-14,0,"precip in the form of snow, but not a measurable amount"
+cakr,2014,25-May-14,0,"precip in the form of rain, snow, sleet; not a measurable amount"
+cakr,2014,26-May-14,0.125,"snow, rain, sleet accumulated from May 24-26"
+cakr,2014,27-May-14,0,"light rain in the evening, but not measurable"
+cakr,2014,28-May-14,0,"rained hard all night and until 14:00, but none collected in gauge because it blew over"
+cakr,2014,29-May-14,0.0625,rained hard all day (but sideways) until 1730 or so
+cakr,2014,30-May-14,0.125,
+cakr,2014,31-May-14,0,.
+cakr,2014,1-Jun-14,0.125,
+cakr,2014,2-Jun-14,0,
+cakr,2014,3-Jun-14,0,precip in the form of icy drizzle
+cakr,2014,4-Jun-14,0,
+cakr,2014,5-Jun-14,0,
+cakr,2014,6-Jun-14,0,
+cakr,2014,7-Jun-14,0.05,rain in afternoon and evening
+cakr,2014,8-Jun-14,0,"light rain in early morning, but not measurable in gauge"
+cakr,2014,9-Jun-14,0.2,"rain beginning in early morning hours, persisting until evening "
+cakr,2014,10-Jun-14,0,"no rain, sun all day!"
+cakr,2014,11-Jun-14,0,"fog with occasional light rain, but not a measurable amount"
+cakr,2014,12-Jun-14,0,
+cakr,2014,13-Jun-14,0,"brief rain as storm passed to north, but the amount was not measurable"
+cakr,2014,14-Jun-14,0,
+cakr,2014,15-Jun-14,0,
+cakr,2014,16-Jun-14,0,
+cakr,2014,17-Jun-14,0,
+cakr,2014,18-Jun-14,0,
+cakr,2014,19-Jun-14,0,
+cakr,2014,20-Jun-14,0,
+cakr,2014,21-Jun-14,0,
+cakr,2014,22-Jun-14,0,
+cakr,2014,23-Jun-14,0,
+cakr,2014,24-Jun-14,0,
+cakr,2014,25-Jun-14,0,
+cakr,2014,26-Jun-14,0,
+cakr,2014,27-Jun-14,0,
+cakr,2014,28-Jun-14,0,"light, misty precip in morning; not measurable"
+cakr,2014,29-Jun-14,0.12,"rain overnight and into morning, then again in afternoon. Observer felt that this measurement did not likely reflect actual amount."
+cakr,2014,30-Jun-14,0,
+cakr,2014,1-Jul-14,0,"sporadic, light rain; not measurable"
+cakr,2014,2-Jul-14,0,
+cakr,2014,3-Jul-14,0,
+cakr,2014,4-Jul-14,0,
+cakr,2014,5-Jul-14,0,
+cakr,2014,6-Jul-14,0,
+cakr,2014,7-Jul-14,0,
+nome,2011,5/12/2011,0,
+nome,2011,5/13/2011,0,sunny
+nome,2011,5/14/2011,0,sunny/ light rain in the afternoon
+nome,2011,5/15/2011,0,sunny
+nome,2011,5/16/2011,0,sunny/ weather station set up
+nome,2011,5/17/2011,0,
+nome,2011,5/18/2011,0,sunny/ light rain around 21:00
+nome,2011,5/19/2011,0,sunny
+nome,2011,5/20/2011,0.1,sunny/ earthquake at around 12:00
+nome,2011,5/21/2011,0,sunny
+nome,2011,5/22/2011,0,rain around 1:00/ sunny
+nome,2011,5/23/2011,0.14,rainy and windy during morning/ sunny but cool in the afternoon
+nome,2011,5/24/2011,trace,sunny
+nome,2011,5/25/2011,0,"sunny, hot and windy"
+nome,2011,5/26/2011,0,sunny
+nome,2011,5/27/2011,0,sunny and hot
+nome,2011,5/28/2011,0,
+nome,2011,5/29/2011,trace,
+nome,2011,5/30/2011,trace,
+nome,2011,5/31/2011,0,sunny
+nome,2011,6/1/2011,0,cloudy and rainy
+nome,2011,6/2/2011,0,sunny
+nome,2011,6/3/2011,0,sunny
+nome,2011,6/4/2011,0,windy and cold
+nome,2011,6/5/2011,0,
+nome,2011,6/6/2011,0,
+nome,2011,6/7/2011,0,sunny/ rain in the afternoon
+nome,2011,6/8/2011,0,sunny
+nome,2011,6/9/2011,0,sunny
+nome,2011,6/10/2011,0,sunny
+nome,2011,6/11/2011,0,
+nome,2011,6/12/2011,0,
+nome,2011,6/13/2011,0,sunny
+nome,2011,6/14/2011,0,cold and rainy in the evening
+nome,2011,6/15/2011,0,sunny
+nome,2011,6/16/2011,0,sunny
+nome,2011,6/17/2011,0,sunny
+nome,2011,6/18/2011,0,sunny
+nome,2011,6/19/2011,0,sunny/ rain at 23:00
+nome,2011,6/20/2011,0,rain at early morning and pouring late in the evening/ very windy
+nome,2011,6/21/2011,0.15,"cloudy, cold and windy"
+nome,2011,6/22/2011,0,"cloudy, cold and showering"
+nome,2011,6/23/2011,0,"cloudy, cold and showering"
+nome,2011,6/24/2011,0,sunny and hot
+nome,2011,6/25/2011,0,rainy and windy
+nome,2011,6/26/2011,0,windy and cloudy
+nome,2011,6/27/2011,trace,"windy, cloudy and showering"
+nome,2011,6/28/2011,0,sunny/ windy and very foggy at night
+nome,2011,6/29/2011,0,sunny and hot/ windy at night
+nome,2011,6/30/2011,0,sunny and very buggy (lots of mosquitoes on plot)
+nome,2011,7/1/2011,0,sunny and very windy
+nome,2011,7/2/2011,0,"cloudy, windy and a bit cold/ rain in the late afternoon and evening"
+nome,2011,7/3/2011,0,
+nome,2011,7/4/2011,0,rain in the afternoon
+nome,2011,7/5/2011,1,rainny and windy
+nome,2011,7/6/2011,0.1,"cloudy, windy and rainy"
+nome,2011,7/7/2011,0.1,rain in the morning/ cloudy but sunny in the afternoon
+nome,2011,7/8/2011,0,sunny with bit of cloud
+nome,2011,7/9/2011,0.2,rain during earlier in the day/ cloudy
+nome,2011,7/10/2011,trace,rain in the morning and afternoon
+nome,2011,7/11/2011,0.6,rainy and windy/ stormy in the evening
+nome,2011,7/12/2011,0.2,rain in the morning/ stormy in the evening and night
+nome,2011,7/13/2011,0.3,cloudy and showering
+nome,2011,7/14/2011,0.1,rainy and windy
+nome,2011,7/15/2011,1,rainy and windy in the morning/ cloudy in the evening
+nome,2011,7/16/2011,0.3,rainy through out the day
+nome,2011,7/17/2011,0.5,showering through out the day/ sunny evening
+nome,2011,7/18/2011,0,sunny through out the day/ misty at night
+nome,2011,7/19/2011,trace,"showering/ rainy all day, very misty"
+nome,2011,7/20/2011,0,sunny and calm
+nome,2011,7/21/2011,0,sunny and a bit cloudy in the afternoon
+nome,2011,7/22/2011,0,
+nome,2011,7/23/2011,0,
+nome,2011,7/24/2011,0,
+nome,2011,7/25/2011,0,
+nome,2012,5/12/2012,0,ocean first opened
+nome,2012,5/13/2012,0,sunny
+nome,2012,5/14/2012,0,"cloudy, little snow in the morning"
+nome,2012,5/15/2012,0,cloudy and windy
+nome,2012,5/16/2012,0,rainy all day (ocean greatly opened)
+nome,2012,5/17/2012,0,"sunny and warm (~7'C), melting is greatly progressed"
+nome,2012,5/18/2012,0,sunny
+nome,2012,5/19/2012,0,sunny
+nome,2012,5/20/2012,0,sunny and cold
+nome,2012,5/21/2012,0,sunny/ weather station setup
+nome,2012,5/22/2012,0,"sunny, ocean opened about 250m away"
+nome,2012,5/23/2012,0,"sunny and cold, first flower on plot"
+nome,2012,5/24/2012,0,foggy and cold (temp dropped below 0'C) 
+nome,2012,5/25/2012,0,
+nome,2012,5/26/2012,0,sunny
+nome,2012,5/27/2012,0,sunny
+nome,2012,5/28/2012,0,sunny
+nome,2012,5/29/2012,0,"cloudy and little bit of rain in the morning, sunny and hot in the afternoon"
+nome,2012,5/30/2012,0,sunny and windy
+nome,2012,5/31/2012,0,sunny
+nome,2012,6/1/2012,0,sunny and very windy
+nome,2012,6/2/2012,0,sunny and windy
+nome,2012,6/3/2012,0,sunny
+nome,2012,6/4/2012,0,sunny
+nome,2012,6/5/2012,0,sunny
+nome,2012,6/6/2012,0,sunny
+nome,2012,6/7/2012,0,sunny
+nome,2012,6/8/2012,trace,cloudy and scattered shower
+nome,2012,6/9/2012,trace,cloudy and scattered shower
+nome,2012,6/10/2012,0,"cloudy in the morning, sunny in the afternoon"
+nome,2012,6/11/2012,0,sunny
+nome,2012,6/12/2012,0,very windy entire day (too windy to trap birds)
+nome,2012,6/13/2012,0,foggy and misty entire day
+nome,2012,6/14/2012,0,"sunny and hot, mosquitos are out on the plot"
+nome,2012,6/15/2012,0,sunny
+nome,2012,6/16/2012,0,sunny
+nome,2012,6/17/2012,0,sunny and windy
+nome,2012,6/18/2012,0,
+nome,2012,6/19/2012,0,
+nome,2012,6/20/2012,0,cold and misty
+nome,2012,6/21/2012,0,
+nome,2012,6/22/2012,0,cloudy
+nome,2012,6/23/2012,trace,"shower and cloudy, rainy in the afternoon"
+nome,2012,6/24/2012,0.1,"rainy all day, huge emergence of midges and insects"
+nome,2012,6/25/2012,0.3,"rainy and windy in the morning through early afternoon, rain stopped in the evening"
+nome,2012,6/26/2012,0,
+nome,2012,6/27/2012,0,cloudy and windy
+nome,2012,6/28/2012,0,sunny
+nome,2012,6/29/2012,0,sunny
+nome,2012,6/30/2012,0,cloudy in the morning and sunny in the afternoon
+nome,2012,7/1/2012,0,"sunny in the afternoon, cloudy and windy in the evening"
+nome,2012,7/2/2012,trace,"cloudy in the morning through afternoon, rain at night"
+nome,2012,7/3/2012,0.2,"sunny and calm throughout the day, rain after midnight"
+nome,2012,7/4/2012,0,sunny and calm
+nome,2012,7/5/2012,0.35,"rainy all afternoon, sunny in the evening"
+nome,2012,7/6/2012,0,sunny
+nome,2012,7/7/2012,0,"sunny and calm, very buggy"
+nome,2012,7/8/2012,0,sunny
+nome,2012,7/9/2012,0,"cloudy and windy through morning/afternoon, sunny in the evening"
+nome,2012,7/10/2012,0,"sunny and hot, lots of bugs on plot and camp"
+nome,2012,7/11/2012,0,"sunny and hot, lots of bugs on plot and camp"
+nome,2012,7/12/2012,0,"cloudy in the morning, sunny in the afternoon"
+nome,2012,7/13/2012,0,sunny
+nome,2012,7/14/2012,0.3,"rainy, scattered shower"
+nome,2012,7/15/2012,0,sunny
+nome,2012,7/16/2012,0,
+nome,2012,7/17/2012,0,cloudy and shower
+nome,2012,7/18/2012,0,windy and shower
+nome,2012,7/19/2012,0.1,cloudy and windy (too windy to mistnet)
+nome,2012,7/20/2012,0,sunny
+nome,2012,7/21/2012,0,sunny
+nome,2012,7/22/2012,0,sunny
+nome,2012,7/23/2012,0,sunny
+nome,2012,7/24/2012,0,storm
+nome,2012,7/25/2012,0,storm
+nome,2013,5/13/2013,0,sunny
+nome,2013,5/14/2013,0,sunny
+nome,2013,5/15/2013,0,"snow storm, windy"
+nome,2013,5/16/2013,0,"snow shower, strong wind"
+nome,2013,5/17/2013,0,
+nome,2013,5/18/2013,0,
+nome,2013,5/19/2013,0,snow in the morning
+nome,2013,5/20/2013,0,heavy snow throughout the day
+nome,2013,5/21/2013,0,"snow and rain, temp went above 30'F"
+nome,2013,5/22/2013,0,snow and rain
+nome,2013,5/23/2013,0,snow
+nome,2013,5/24/2013,0,sunny
+nome,2013,5/25/2013,0,sunny
+nome,2013,5/26/2013,0,"sunny, hot, calm"
+nome,2013,5/27/2013,0,"sunny, hot, calm"
+nome,2013,5/28/2013,0,"sunny, hot, calm"
+nome,2013,5/29/2013,0,"sunny, warm, bit windy"
+nome,2013,5/30/2013,0,"sunny, calm, windy at night"
+nome,2013,5/31/2013,0,sunny
+nome,2013,6/1/2013,0,"sunny, very windy"
+nome,2013,6/2/2013,0,"sunny, calm"
+nome,2013,6/3/2013,0.1,rain all day
+nome,2013,6/4/2013,0,"sunny, cold, windy"
+nome,2013,6/5/2013,0,"sunny, cold, windy, misty in the morning"
+nome,2013,6/6/2013,0,"sprinkle of snow in the morning, cold, windy, foggy, misty"
+nome,2013,6/7/2013,0,"very cold, windy, misty, fog"
+nome,2013,6/8/2013,0,"rain all day, cold(temp down to 1.5'C)"
+nome,2013,6/9/2013,0.3,rain shower all day
+nome,2013,6/10/2013,0.1,foggy and misty all day
+nome,2013,6/11/2013,0,foggy and misty
+nome,2013,6/12/2013,0,sunny and warm
+nome,2013,6/13/2013,0,"sunny, little bit of wind, mosquitoes are out"
+nome,2013,6/14/2013,0,
+nome,2013,6/15/2013,0,
+nome,2013,6/16/2013,0,"foggy in the morning (visibility really low), sunny in the afternoon"
+nome,2013,6/17/2013,0,"sunny, temp high up to 78'F"
+nome,2013,6/18/2013,0,"sunny, windy, buggy"
+nome,2013,6/19/2013,0,sunny
+nome,2013,6/20/2013,0,sunny
+nome,2013,6/21/2013,0,"sunny, buggy"
+nome,2013,6/22/2013,0,"sunny, windy"
+nome,2013,6/23/2013,0,"sunny, relatively calm, very very buggy"
+nome,2013,6/24/2013,0,"sunny, calm, buggy"
+nome,2013,6/25/2013,0.1,"rain in the morning, temp went up to mid-70's in the afternoon"
+nome,2013,6/26/2013,0,"windy, lower temp, cloudy at night"
+nome,2013,6/27/2013,0.1,"cloudy in the morning, rain in the afternoon through night"
+nome,2013,6/28/2013,0.3,rain shower and cloudy all day
+nome,2013,6/29/2013,0.5,rain
+nome,2013,6/30/2013,0.4,rain
+nome,2013,7/1/2013,trace,"shower in the morning, windy and cloudy in the afternoon"
+nome,2013,7/2/2013,0.2,rain
+nome,2013,7/3/2013,0.2,"rain in the morning, cloudy and shower all day"
+nome,2013,7/4/2013,0,sunny
+nome,2013,7/5/2013,0,heavy rain
+nome,2013,7/6/2013,0,sunny
+nome,2013,7/7/2013,0,sunny
+nome,2013,7/8/2013,0,sunny
+nome,2013,7/9/2013,0,"sunny, windy"
+nome,2013,7/10/2013,0,sunny
+nome,2013,7/11/2013,0,"sunny, calm"
+nome,2013,7/12/2013,0,"sunny, calm"
+nome,2013,7/13/2013,0,"sunny, calm"
+nome,2013,7/14/2013,0,heavy rain
+nome,2013,7/15/2013,0,cloudy 
+nome,2013,7/16/2013,0,rain
+nome,2013,7/17/2013,0,cloudy
+nome,2014,19-May-14,0,"cold, windy, sunny"
+nome,2014,20-May-14,?,"calm, rain all day"
+nome,2014,21-May-14,0,"sunny, cold wind"
+nome,2014,22-May-14,0,"sunny, windy"
+nome,2014,23-May-14,0,"sunny, cold"
+nome,2014,24-May-14,0,"snow in the morning, foggy, windy"
+nome,2014,25-May-14,?,"thick snow with light wind all morning, rain in the afternoon, cold"
+nome,2014,26-May-14,?,"foggy, rainy all day"
+nome,2014,27-May-14,?,rain and foggy all day
+nome,2014,28-May-14,?,"rain and foggy all day, clear in the evening"
+nome,2014,29-May-14,?,"rain in the morning, sunny in the afternoon"
+nome,2014,30-May-14,0,"foggy, sunny"
+nome,2014,31-May-14,0.1,"foggy in the morning, sunny and windy"
+nome,2014,1-Jun-14,0,"misty, cold"
+nome,2014,2-Jun-14,0,"cloudy, calm"
+nome,2014,3-Jun-14,trace,"cloudy, mild wind, misty"
+nome,2014,4-Jun-14,?,"cold, windy, foggy, rain over night"
+nome,2014,5-Jun-14,0,"sunny, calm, first day of nice weather!"
+nome,2014,6-Jun-14,,
+nome,2014,7-Jun-14,0,"windy, sunny"
+nome,2014,8-Jun-14,0,"sunny, warm"
+nome,2014,9-Jun-14,0,"sunny, warm, some bugs came out on plot"
+nome,2014,10-Jun-14,0,"windy, cloudy"
+nome,2014,11-Jun-14,0,"very windy all day, sunny"
+nome,2014,12-Jun-14,?,"drizzly rain in the early afternoon, cloudy"
+nome,2014,13-Jun-14,0,"sunny, warm, breezy"
+nome,2014,14-Jun-14,trace,"sunny, cloudy, breezy, lots of bugs, rain early morning, shower in the evening"
+nome,2014,15-Jun-14,?,"cloudy, misty, cold, breezy"
+nome,2014,16-Jun-14,0,"misty, cold in the morning, sunny and breezy in the afternoon"
+nome,2014,17-Jun-14,0,sunny
+nome,2014,18-Jun-14,trace,"very brief rain drops in the evening, sunny"
+nome,2014,19-Jun-14,0,sunny
+nome,2014,20-Jun-14,0,"sunny, windy"
+nome,2014,21-Jun-14,0,sunny
+nome,2014,22-Jun-14,0,"sunny, windy"
+nome,2014,23-Jun-14,0,"foggy, windy"
+nome,2014,24-Jun-14,0,"foggy, windy, cold"
+nome,2014,25-Jun-14,0,very windy
+nome,2014,26-Jun-14,0,"sunny, strong wind"
+nome,2014,27-Jun-14,0,"cloudy, windy"
+nome,2014,28-Jun-14,trace,"cloudy, windy, misty, rain at night"
+nome,2014,29-Jun-14,0,"sunny, calm"
+nome,2014,30-Jun-14,0,"sunny, breezy"
+nome,2014,1-Jul-14,0.3,rain all day
