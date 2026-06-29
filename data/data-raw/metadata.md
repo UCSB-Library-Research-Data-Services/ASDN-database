@@ -10,13 +10,15 @@ Please acknowledge this dataset and the authors in any analysis, publication, pr
 
 - If you use the full dataset, we suggest you cite it as:\
   *Lanctot, RB, SC Brown, and BK Sandercock. 2017. Arctic Shorebird Demographics Network. NSF Arctic Data Center. doi: [doi:10.18739/A2222R68W](https://doi.org/10.18739/A2222R68W)*
-- If you use data from only one or a few sites, we suggest you cite data for each site as per this [example:\\](example:\){.uri} *Lanctot, RB and ST Saalfeld. 2017. Barrow, 2014. Arctic Shorebird Demographics Network. NSF Arctic Data Center. doi: [doi:10.18739/A2222R68W](https://doi.org/10.18739/A2222R68W)*
+- If you use data from only one or a few sites, we suggest you cite data for each site as per this exmaple:\
+*Lanctot, RB and ST Saalfeld. 2017. Barrow, 2014. Arctic Shorebird Demographics Network. NSF Arctic Data Center. doi: [doi:10.18739/A2222R68W](https://doi.org/10.18739/A2222R68W)*
 
 Note that each updated version of the dataset has its own unique DOI.
 
 Disclaimers: The dataset is distributed “as is” and with absolutely no warranty. The data providers have invested considerable effort to ensure that the data are of highest quality, but it is possible that undetected errors remain. Data have been processed with several steps for quality assurance, but the data providers accept no liability or guarantee that the data are up-to-date, correct, or complete. Access to data is provided on the understanding that the data providers are not responsible for any damages from inaccuracies in the data.
 
 General inquiries can be directed first to Emily Weiser ([Emily.L.Weiser\@gmail.com](mailto:Emily.L.Weiser@gmail.com){.email}). Site-specific inquiries should be directed to the corresponding contact person(s) listed below for each site.
+
 
 ## INTRODUCTION
 
@@ -313,6 +315,7 @@ Shorebirds were banded with unique combinations of color bands. In the data file
 - `wf` white flag
 - `wfe` white flag engraved with 3-digit alphanumeric code
 - `y` yellow
+
 
 ## DATA FILES
 
