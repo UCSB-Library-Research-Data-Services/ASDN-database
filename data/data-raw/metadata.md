@@ -18,6 +18,19 @@ Disclaimers: The dataset is distributed “as is” and with absolutely no warra
 
 General inquiries can be directed first to Emily Weiser ([Emily.L.Weiser\@gmail.com](mailto:Emily.L.Weiser@gmail.com){.email}). Site-specific inquiries should be directed to the corresponding contact person(s) listed below for each site.
 
+## INTRODUCTION
+
+Recent shorebird trend analyses indicate that many North America shorebirds are declining, but we do
+not know why (Morrison et al. 2006, Bart et al. 2007). The goal of the Arctic Shorebird Demographics
+Network (hereafter termed “Network”) is to collaboratively conduct demographic studies on several
+shorebird focal species that will help determine factors limiting their population size. The Network 
+measures demographic rates such as adult apparent survival, annual productivity, apparent nest survival,
+population age-structure, etc., on the Arctic breeding grounds. Additionally, site-specific ecological and
+environmental variables (e.g. food resources, prey and predator abundance, weather, etc.) that
+influence demographic rates and are influenced by climate change and other anthropogenic forces will
+be measured and incorporated into the analyses.
+
+
 ## DATA AUTHORS
 
 ### Barrow
