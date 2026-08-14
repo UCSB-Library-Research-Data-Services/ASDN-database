@@ -766,7 +766,7 @@ List of field crew members and their active dates at each site in each year
 - Start Date that crew member started participating in field work
 - End Last date that the crew member participated in field work
 
-### Daily_pred_lemm
+### Daily\_pred\_lemm
 
 Opportunistic observations of microtine rodents and potential predators of shorebirds
 
@@ -801,7 +801,7 @@ Record of the species (birds and mammals) encountered during field work each day
 - `Observer_hours` Total person-hours in which observations were made that day to contribute to the list
 - `Alder_Flycatcher` The remaining columns list the species (birds and mammals) recorded for at least study site in at least one year. … Columns are sorted in alphabetical order and give the full common name of the species recorded. Yellow-rumped_Warbler The number of individuals seen is recorded for each species, except when individuals were not counted but the species was present (typically for very abundant species), an "X" is shown.
 
-### Daily_species_effort
+### Daily\_species\_effort
 
 Observer effort information corresponding to the Daily_species data
 
