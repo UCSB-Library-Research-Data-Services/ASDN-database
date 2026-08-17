@@ -312,7 +312,7 @@ Mmm the Dates are not what we were expecting... It generally means there are dif
 
 ```{r}
 snowsurvey_fixed <- snowsurvey_fixed %>%
-  mutate(Date = ifelse(Date == "8&9 june 06", "8 june 06", Date),
+  mutate(Date = ifelse(Date == "8&9 june 06", "8 june 06", Date),   # Arbitrary
          Date2 = dmy(Date))
 ```
 
@@ -322,7 +322,7 @@ Final manipulations to share our table:
 
 ```{r}
 snowsurvey_final <- snowsurvey_fixed %>%
-  select(Site, Year, Date2, Plot, Location, Snow_cover, Water_cover, Land_cover, Observer, Notes) %>% # Select columns of interest
+  select(Site, Year, Date2, Plot, Location, Snow_cover, Water_cover, Land_cover, Observer) %>% # Select columns of interest
   rename(Date = Date2) %>%
   mutate(Total_cover = Snow_cover + Water_cover + Land_cover,  # recompute total cover on the latest
          Plot = ifelse(is.na(Plot), paste0(Site, "p1"), Plot), # can not afford to have NA as part of primary key
