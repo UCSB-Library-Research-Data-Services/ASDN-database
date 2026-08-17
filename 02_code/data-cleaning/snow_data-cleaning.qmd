@@ -9,6 +9,7 @@ format: html
 # Libraries
 library(tidyverse)
 library(here)
+library(naniar)
 
 # file names
 datadir_raw <- "01_data/data-raw/"
@@ -19,7 +20,9 @@ snowsurvey_file <- "ASDN_Snow_survey.csv"
 ```
 
 
-## Data Exploration
+## Snow survey data
+
+### Data Exploration
 
 Import the snow survey
 
@@ -30,13 +33,22 @@ snowsurvey_csv <- read_csv(here(datadir_raw, snowsurvey_file))
 glimpse(snowsurvey_csv)
 
 ```
-Ok, the types are not what we were expecting for the percentages of cover. Let's find out where it is coming from:
+
+Checking NAs frequency
+
+```{r}
+snowsurvey_csv %>%
+  miss_var_summary()
+```
+
+Ok not too many NAs execpt for the `Notes` column, we might want to discard this column before importing this table in our databse. Also glimpse hightlighted that the data types are not what we were expecting for the percentages of cover. Let's find out why:
 
 ```{r}
 snowsurvey_csv %>% 
   count(Snow_cover)
 ```
-Let's focus on the non-numeric values:
+
+Let's focus on the non-numeric values as a starting point:
 
 ```{r}
 snowsurvey_csv %>% 
@@ -44,10 +56,9 @@ snowsurvey_csv %>%
   filter(is.na(as.numeric(Snow_cover)))
 ```
 
+### Data cleaning
 
-## Snow Cover cleaning
-
-Ok, we found our problematic values that are not numeric. There are a non-negligible number of cells with a dot as value. There is no mention of using this symbol in the metadata. We should probably have a look at those rows
+Ok, we found our problematic values that are not numeric. There are a non-negligible number of cells with a dot as value. There is no mention of using this symbol in the metadata. We should probably have a look at those rows:
 
 ```{r}
 snowsurvey_csv %>% 
@@ -55,7 +66,7 @@ snowsurvey_csv %>%
   View()
 ```
 
-Interestingly, when there is a "dot" for snow cover, it is also the case for all the other covers. Let's replace them all with NA since there is no supplemental information in the provided metadata
+Interestingly, when there is a "dot" for snow cover, it is also the case for all the other covers. Let's replace them all with NA since there is no supplemental information in the provided metadata:
 
 ```{r}
 snowsurvey_fixed <- snowsurvey_csv %>% 
@@ -77,24 +88,25 @@ snowsurvey_fixed <- snowsurvey_fixed %>%
 
 ```{r}
 snowsurvey_fixed <- snowsurvey_fixed %>% 
-  mutate(Snow_cover = ifelse(Snow_cover == "n/a", NA, Snow_cover))
+ mutate(across(ends_with("_cover"), ~ifelse(.x == "n/a", NA, .x)))
 ```
 
 "unk" is probably an abbreviation for unknown:
 
 ```{r}
 snowsurvey_fixed <- snowsurvey_fixed %>% 
-  mutate(Snow_cover = ifelse(Snow_cover == "unk", NA, Snow_cover))
+   mutate(across(ends_with("_cover"), ~ifelse(.x == "unk", NA, .x)))
 ```
 
-Finally we will set "<1" as zero:
+
+Finally we will set "<1" as zero (quite arbitrary indeed):
 
 ```{r}
 snowsurvey_fixed <- snowsurvey_fixed %>% 
   mutate(Snow_cover = ifelse(Snow_cover == "<1", "0", Snow_cover))
 ```
 
-Now we can test if we can transform the column:
+Now we can test if we now only have NAs as non numeric values in the column:
 
 ```{r}
 snowsurvey_fixed %>% 
@@ -102,31 +114,236 @@ snowsurvey_fixed %>%
   filter(is.na(as.numeric(Snow_cover)))
 ```
 
-Ok we are now ready do the transformation
+Ok, we can do the transformation:
 
 ```{r}
 snowsurvey_fixed <- snowsurvey_fixed %>% 
   mutate(Snow_cover = as.numeric(Snow_cover))
 ```
 
-Yeah we have finally a numeric column. Now we can verify that all the values are between 0 and 100:
+Yeah we have finally a numeric column 🎉. Now we can verify that all the values are between 0 and 100:
 
 ```{r}
 snowsurvey_fixed %>% 
   filter(Snow_cover > 100) 
 ```
 
-We have two values above 100, with an interesting 470%! ☃️
+We have two values above 100, with an interesting 470%! ☃️ We should probably set those values to NAs:
+
+```{r}
+snowsurvey_fixed <- snowsurvey_fixed %>% 
+  mutate(Snow_cover = ifelse(Snow_cover > 100, NA, Snow_cover))
+```
+
+Let's check for negative values:
 
 ```{r}
 snowsurvey_fixed %>% 
   filter(Snow_cover < 0) 
 ```
 
-No negative value detected.
+No negative value detected ✅
+
+
+### Check the Water data to see if there were other problematic values
+
+```{r}
+snowsurvey_fixed %>% 
+  count(Water_cover) %>%
+  filter(is.na(as.numeric(Water_cover)))
+```
+
+All fixed for water, let's make it numeric then:
+
+```{r}
+snowsurvey_fixed <- snowsurvey_fixed %>% 
+  mutate(Water_cover = as.numeric(Water_cover))
+```
+
+Yeah we have finally a numeric column 🎉. Now we can verify that all the values are between 0 and 100:
+
+```{r}
+snowsurvey_fixed %>% 
+  filter(Water_cover > 100) 
+```
+
+Sounds like a lot of water 💧 !!!!
+
+```{r}
+snowsurvey_fixed <- snowsurvey_fixed %>% 
+  mutate(Water_cover = ifelse(Water_cover > 100, NA, Water_cover))
+```
+
+Let's check for negative values:
+
+```{r}
+snowsurvey_fixed %>% 
+  filter(Water_cover < 0) 
+```
+
+All good!!
+
+
+### Land 
+
+```{r}
+snowsurvey_fixed %>% 
+  count(Land_cover) %>%
+  filter(is.na(as.numeric(Land_cover)))
+```
+
+All fixed for land, let's make it numeric then:
+
+```{r}
+snowsurvey_fixed <- snowsurvey_fixed %>% 
+  mutate(Land_cover = as.numeric(Land_cover))
+```
+
+Yeah we have finally a numeric column 🎉. Now we can verify that all the values are between 0 and 100:
+
+```{r}
+snowsurvey_fixed %>% 
+  filter(Land_cover > 100) 
+```
+
+All good!
+
+Let's check for negative values:
+
+```{r}
+snowsurvey_fixed %>% 
+  filter(Land_cover < 0) 
+```
+
+Let's fix this
+
+```{r}
+snowsurvey_fixed <- snowsurvey_fixed  %>%
+  mutate(Water_cover = ifelse(Land_cover < 0, NA, Land_cover))
+  
+```
+
+
+### Total Cover
+
+The metadata says this column is like a flag that should always be 100. Let's first use this to try to fix as much Na we can.
+
+1. We will be assuming that if we have only one NA in the cover columne we could compute the value by computing: `cover_NA = 100 - coverA - coverB`
+2. If we have only one value but it is 100, then the others should be set to `0` and not NA
+
+We will do this in a separate column than the existing one so we can compare
+
+
+### Inferring missing values that should be 0s
+
+```{r}
+# Infer any 0s that may be marked as NAs
+snowsurvey_fixed <- snowsurvey_fixed %>% 
+  mutate(Snow_cover = case_when(
+    Water_cover + Land_cover == 100 ~ 0,
+    Water_cover == 100 ~ 0,
+    Land_cover == 100 ~ 0,
+    .default = Snow_cover
+  )) %>% 
+  mutate(Water_cover = case_when(
+    Snow_cover + Land_cover == 100 ~ 0,
+    Snow_cover == 100 ~ 0,
+    Land_cover == 100 ~ 0,
+    .default = Water_cover
+  )) %>% 
+  mutate(Land_cover = case_when(
+    Snow_cover + Water_cover == 100 ~ 0,
+    Snow_cover == 100 ~ 0,
+    Water_cover == 100 ~ 0,
+    .default = Land_cover
+  ))
+```
+
+
+### Compute a new total area
+
+```{r}
+snowsurvey_fixed <- snowsurvey_fixed %>% 
+  mutate(Total_cover_computed = Snow_cover + Land_cover + Water_cover)
+```
+
+Looking at the data two things were noticed:
+
+1. There are some sites/dates for which only snow cover was reported
+2. There is som accuracy problems with values that are close to 100%
+
+Decisions:
+
+1. Keep only rows with at total cover between 80 - 120 (in other words allowing 20% error)
+2. Make an exception for when Land + water cover == 0 & snow_cover > 0 to keep the sites for which only snow_cover has been reported (seems to be the moost valuable information in this table)
+
+
+```{r}
+snowsurvey_fixed <- snowsurvey_fixed %>% 
+  filter((Total_cover_computed >= 80 & Total_cover_computed <= 120) | (Water_cover + Land_cover == 0 & Snow_cover >= 0))
+```
+
+### Dates
+
+```{r}
+snowsurvey_fixed <- snowsurvey_fixed %>%
+  mutate(Date2 = as_date(Date))
+```
+
+We have 72 errors. Let's have a look at the date which failed:
+
+```{r}
+snowsurvey_fixed %>% 
+  filter(is.na(Date2)) %>% 
+  View()
+```
+
+
+It is because 2 days were entered as one value `8&9 june 06`, it is not in the expected format
+
+```{r}
+snowsurvey_fixed <- snowsurvey_fixed %>%
+  mutate(Date2 = ifelse(is.na(Date2),  dmy("08/06/06"), Date2))
+
+snowsurvey_fixed
+```
+
+Mmm the Dates are not what we were expecting... It generally means there are different date types. Let's start by fixing the problematic dates before transforming it to the date format.
+
+```{r}
+snowsurvey_fixed <- snowsurvey_fixed %>%
+  mutate(Date = ifelse(Date == "8&9 june 06", "8 june 06", Date),
+         Date2 = dmy(Date))
+```
+
+Looking good!
+
+Final manipulations to share our table:
+
+```{r}
+snowsurvey_final <- snowsurvey_fixed %>%
+  select(Site, Year, Date2, Plot, Location, Snow_cover, Water_cover, Land_cover, Observer, Notes) %>% # Select columns of interest
+  rename(Date = Date2) %>%
+  mutate(Total_cover = Snow_cover + Water_cover + Land_cover,  # recompute total cover on the latest
+         Plot = ifelse(is.na(Plot), paste0(Site, "p1"), Plot), # can not afford to have NA as part of primary key
+         Location = ifelse(is.na(Location), paste0(Location, "l1"), Location), # can not afford to have NA as part of primary key
+         Observer =  sub(",.*", "", Observer),
+         Observer =  sub("&.*", "", Observer),
+         Observer =  sub("-.*", "", Observer),
+         Observer =  sub("/.*", "", Observer), # Keep only the first observer
+         Site = ifelse(Site== "ebmain", "eaba", Site) # Assuming this is a typo
+         ) %>% 
+  relocate(Total_cover, .after = Land_cover) %>%
+  distinct(Site, Year, Date, Plot, Location, .keep_all = TRUE) # there are some duplicated rows; several measurements per day?
+```
+
+
+Let's write the presence table to a csv file:
+
+```{r}
+write_csv(snowsurvey_final, here(datadir_processed, "snow_survey_fixed.csv"))
+```
 
 
 
-
-## Data Export
 
