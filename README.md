@@ -1,6 +1,6 @@
-# ASDN database
+# Arctic Shorebird Demographics Network (ASDN) database
 
-The Arctic Shorebird Demographics Network dataset reworked as a [DuckDB](https://duckdb.org/) database for teaching relational database concepts and an introduction to SQL. Included in this repository are the original raw data, processing scripts for data cleaning and database ingestion, and tutorial guides featuring practical educational use cases.
+The Arctic Shorebird Demographics Network (ASDN) dataset reworked as a [DuckDB](https://duckdb.org/) database for teaching relational database concepts and an introduction to SQL. Included in this repository are the original raw data, processing scripts for data cleaning and database ingestion, and tutorial guides featuring practical educational use cases.
 
 
 ## The Original Data
