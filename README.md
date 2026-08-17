@@ -1,15 +1,15 @@
-# ASDN-database
+# ASDN database
 
-The Arctic Shorebird Demographics Network dataset reworked as a DuckDB database for teaching relational database concepts and 
-an introduction to SQL.
+The Arctic Shorebird Demographics Network dataset reworked as a [DuckDB](https://duckdb.org/) database for teaching relational database concepts and an introduction to SQL. Included in this repository are the original raw data, processing scripts for data cleaning and database ingestion, and tutorial guides featuring practical educational use cases.
 
-## The data set
 
-ARCTIC SHOREBIRD DEMOGRAPHICS NETWORK (ASDN)
+## The Original Data
+
+The Arctic Shorebird Demographics Network (ASDN) dataset: 
 <a href="https://doi.org/10.18739/A2222R68W"
 target="_blank">https://doi.org/10.18739/A2222R68W</a>
 
-Data set hosted by the
+This data set is hosted by the
 <a href="https://arcticdata.io" target="_blank">NSF Arctic Data
 Center</a> data repository
 
@@ -17,11 +17,11 @@ Center</a> data repository
 src="https://static01.nyt.com/images/2017/09/10/nyregion/10NATURE1/10NATURE1-superJumbo.jpg?quality=75&amp;auto=webp"
 style="width:30.0%" alt="Shorebird picture, copyright New York Times" />
 
-### Background
+## Scientific Background
 
 Shorebird trend analyses indicate that many North America shorebirds are declining, but we do not know why (Morrison et al. 2006). **The goal of the Arctic Shorebird Demographic Network is to collaboratively conuct demographic studies on several shorebird focal species that will help determine factors limiting their population size**. The Network will measure demographic rates such as adult apparent survival, annual productivity, population age-structure, etc. on the Arctic breeding grounds. Additionally, site-specific ecological and environmental variables (e.g. food resources, prey and predator abundance, weather, etc.) that influence demographic rates and are influenced by climate change and other anthropogenic forces will be measured and incorporated into the analyses.
 
-### Study sites
+### Study Sites
 
 Field data on shorebird ecology and environmental conditions were
 collected from 1993-2014 at 16 field sites in Alaska, Canada, and
@@ -51,6 +51,10 @@ Detailed field methods for each year are available in the
 `ASDN_protocol_201X.pdf` files. All research was conducted under permits
 from relevant federal, state, and university authorities.
 
-### References
+## Repository File Structure
+
+
+
+## References
 
 Richard B. Lanctot, Stephen Brown, & Brett K. Sandercock. (2016). Arctic Shorebird Demographics Network. Arctic Data Center [doi:10.18739/A2222R68W](https://doi.org/10.18739/A2222R68W). 
