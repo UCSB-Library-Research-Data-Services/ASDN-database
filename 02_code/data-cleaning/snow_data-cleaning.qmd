@@ -1,5 +1,5 @@
 ---
-title: "Data Cleaning"
+title: "Snow Survey Data Cleaning"
 format: html
 ---
 
@@ -8,27 +8,24 @@ format: html
 
 # Libraries
 library(tidyverse)
+library(here)
 
 # file names
-datadir_raw <- "data/raw/"
+datadir_raw <- "01_data/data-raw/"
 
-datadir_processed <- "data/processed/"
-
-species_file <- "ASDN_Daily_species.csv"
+datadir_processed <- "01_data/data-processed/"
 
 snowsurvey_file <- "ASDN_Snow_survey.csv"
 ```
 
 
-## Snow survey data
-
-### Data Exploration
+## Data Exploration
 
 Import the snow survey
 
 ```{r}
 # Import the species
-snowsurvey_csv <- read_csv(file.path(datadir_raw, snowsurvey_file))
+snowsurvey_csv <- read_csv(here(datadir_raw, snowsurvey_file))
 
 glimpse(snowsurvey_csv)
 
@@ -47,7 +44,8 @@ snowsurvey_csv %>%
   filter(is.na(as.numeric(Snow_cover)))
 ```
 
-### Date cleaning
+
+## Snow Cover cleaning
 
 Ok, we found our problematic values that are not numeric. There are a non-negligible number of cells with a dot as value. There is no mention of using this symbol in the metadata. We should probably have a look at those rows
 
@@ -104,7 +102,7 @@ snowsurvey_fixed %>%
   filter(is.na(as.numeric(Snow_cover)))
 ```
 
-Ok we can do the transformation
+Ok we are now ready do the transformation
 
 ```{r}
 snowsurvey_fixed <- snowsurvey_fixed %>% 
@@ -129,77 +127,6 @@ No negative value detected.
 
 
 
-## Species data
 
-### Data exploration
-
-Import the species csv files with the bird species information:
-
-```{r}
-# Import the species
-species_csv <- read_csv(paste0(datadir_raw, species_file))
-
-glimpse(species_csv)
-```
-
-This data set is stored in a wide format where each specie has its own column. This means that every time we discover a new species we will have to add a column. In addition, a bunch of `0` are stored in this table but do not really provide any information. According to the metadata:
-
-```
-The number of individuals seen is recorded for each species, except when individuals were not counted but the species was present (typically for very abundant species), an "X" is shown. The remaining columns list the full-name of species (birds and mammals) recorded for at least study site in at least one year.
-```
-This data model is not convenient for a database, we will have to switch to a long format.
-
-
-### Data cleaning
-
-```{r}
-species_long <- species_csv %>%
-  pivot_longer(
-    cols = !c(Year, Site, Date, Jdate, Num_observers, All_obs_reported, Observer_hours),
-    names_to = "species",
-    values_to = "species_count",
-    values_transform = list(species_count = as.character)
-  )
-
-```
-
-
-```{r}
-species_long %>% 
-  count(species_count) %>%
-  arrange(desc(n))
-```
-
-We want to focus on the presence and absence of species and not the count. Let's create a new column for presence where anything else than 0 is considered present
-
-```{r}
-species_presence <- species_long %>%
-  mutate(species_presence = ifelse(species_count == "0", 0, 1))
-```
-
-We can remove some columns: "Num_observers", "All_obs_reported", "Observer_hours" are here to help to compute the effort of observation but since we just want presence and absence, we do not need it. We can also remove all the zeros values to reduce the size of our data set:
-
-```{r}
-species_presence <- species_presence %>%
-  filter(species_presence == 1) %>%
-  select(-c(Num_observers, All_obs_reported, Observer_hours, species_count))
-```
-
-Last but not least, let's have a look at our species list
-
-```{r}
-species_presence %>%
-  distinct(species) %>%
-  nrow()
-```
-
-We have 319 species observed in this table
-
-Let's write the presence table to a csv file:
-
-```{r}
-write_csv(species_presence, file.path(datadir_processed, "species_presence"))
-```
-
-
+## Data Export
 
