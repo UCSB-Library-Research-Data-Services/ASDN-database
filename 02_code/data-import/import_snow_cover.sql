@@ -11,7 +11,6 @@ CREATE TABLE Snow_cover (
     Land_cover REAL CHECK (Land_cover BETWEEN 0 AND 130),
     Total_cover REAL CHECK (Total_cover BETWEEN 0 AND 130),
     Observer VARCHAR,
-    Notes VARCHAR,
     PRIMARY KEY (Site, Plot, Location, Date),
     FOREIGN KEY (Site) REFERENCES Site (Code)
 );
