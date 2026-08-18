@@ -1,0 +1,63 @@
+---
+title: "Lemmings data cleaning"
+format: html
+---
+
+
+
+```{r}
+#| message: false  
+
+# Libraries
+library(tidyverse)
+library(here)
+library(naniar)
+
+# file names
+datadir_raw <- "01_data/data-raw/"
+
+datadir_processed <- "01_data/data-processed/"
+
+lemmings_file <- "ASDN_Daily_pred_lemm.csv"
+```
+
+
+## Lemmings survey data
+
+### Data Exploration
+
+Import the data
+
+```{r}
+# Import the species
+lemmings_data <- read_csv(here(datadir_raw, lemmings_file))
+
+glimpse(lemmings_data)
+
+```
+
+All the fields seem to have a correct data type, suggesting that no unexpected value types are present. Some field are categorical and we will check the unique values for those and compare those to the existing metadata.
+
+
+Check NAs frequency
+
+```{r}
+lemmings_data %>% 
+   miss_var_summary()
+```
+
+Notes have mostly missing values, which is expected for such open ended field. 11% of missing data for Observer is somewhat more problematic, but will not perclude analysis. The missing values in the Location files are more problematic since it needs to be used when joining other tables.
+
+Check Categorical fields
+
+```{r}
+lemmings_data %>% 
+  distinct(Location)
+```
+
+It seems that the location is not well standardized and might not add much information. We will drop that field.
+
+```{r}
+lemmings_data %>% 
+  distinct(Observer )
+```
