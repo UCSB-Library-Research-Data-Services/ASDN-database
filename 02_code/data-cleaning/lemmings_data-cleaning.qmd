@@ -48,6 +48,16 @@ lemmings_data %>%
 
 Notes have mostly missing values, which is expected for such open ended field. 11% of missing data for Observer is somewhat more problematic, but will not perclude analysis. The missing values in the Location files are more problematic since it needs to be used when joining other tables.
 
+
+Let's have a look at the Notes:
+
+```{r}
+lemmings_data %>% 
+  distinct(Notes)
+```
+
+Might be useful information, so we will keep it desptite this field being sparse.
+
 Check Categorical fields
 
 ```{r}
@@ -55,9 +65,13 @@ lemmings_data %>%
   distinct(Location)
 ```
 
-It seems that the location is not well standardized and might not add much information. We will drop that field.
+It seems that the Location field is not well standardized and might not add much information. We will drop that attribute.
 
 ```{r}
 lemmings_data %>% 
   distinct(Observer )
 ```
+
+
+
+
