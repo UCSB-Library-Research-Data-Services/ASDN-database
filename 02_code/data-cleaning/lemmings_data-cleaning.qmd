@@ -19,6 +19,9 @@ datadir_raw <- "01_data/data-raw/"
 datadir_processed <- "01_data/data-processed/"
 
 lemmings_file <- "ASDN_Daily_pred_lemm.csv"
+
+observers_file <- "observers.csv"
+
 ```
 
 
@@ -73,5 +76,43 @@ lemmings_data %>%
 ```
 
 
+Load the Observers from the table that was derived from the Bird nest table
 
+```{r}
+observers_data <- read_csv(here(datadir_processed, observers_file))
+```
+Let's see the observers that are not listed in the bird nest observation table
+
+```{r}
+anti_join(lemmings_data,observers_data, join_by(Observer == Abbreviation)) %>%
+  distinct(Observer)
+```
+
+We have many occurrence of multiple observers listed in one cell. We will take the same approach as for the bird nests table and arbitrarily keep only the first observer.  However for now, let's split those multiple entries into separate row and produce a list of observers who do not yet exists in our observer table derived from the nest observation:
+
+```{r}
+missing_observers <- lemmings_data %>%
+  separate_rows(Observer, sep="[,+/]") %>% # split multiple entries per cell into separate rows
+  distinct(Observer) %>%
+  full_join(observers_data, join_by(Observer == Abbreviation), keep = TRUE) %>% 
+  arrange(Observer) %>%
+  filter(is.na(Abbreviation))
+```
+
+Export the csv to edit manually (need to invent names)
+
+```{r}
+write_csv(missing_observers, here(datadir_processed, "lemming_observers_missing.csv"))
+```
+
+
+Manually editing this file in Excel:
+
+- inventing names that matched the initial + last name logic for the abreviation
+- dropped rows containing words like all, crew, weather, ...
+
+
+```{r}
+observers_fixed <- read_csv(here(datadir_processed, "lemming_observers_fixed.csv"))
+```
 
