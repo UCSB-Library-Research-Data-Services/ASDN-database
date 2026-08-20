@@ -171,7 +171,7 @@ species_data <- read_csv(here(datadir_processed, "species.csv"))
 
 lemmings_good_obs %>%
 anti_join(species_data, join_by(Species == Code)) %>%
-  distinct(Species)
+  count(Species)
 
 ```
 
