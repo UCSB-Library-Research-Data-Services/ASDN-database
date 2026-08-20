@@ -302,7 +302,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2012,chur,18-Jul-12,200,08:40:00,16:00:00,7.33,exact,cora,1,1,0,n,jperz
 2012,chur,18-Jul-12,200,08:40:00,16:00:00,7.33,exact,herg,1,1,0,n,jperz
 2012,chur,18-Jul-12,200,08:40:00,16:00:00,7.33,exact,paja,4,1,0,n,jperz
-2014,chur,19-Jul-14,200,09:00:00,15:00:00,6,exact,baea,1,2,0,y,lkoloski
 2014,chur,19-Jul-14,200,09:00:00,15:00:00,6,exact,cora,2,2,0,y,lkoloski
 2014,chur,19-Jul-14,200,09:00:00,15:00:00,6,exact,paja,3,2,0,y,lkoloski
 2014,coat,19-Jul-14,200,10:00:00,20:00:00,10,exact,paja,5,3,0,y,crew1
@@ -312,7 +311,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,cari,19-Jul-14,200,17:00:00,18:10:00,1.17,exact,paja,5,1,0,n,idavies
 2014,cari,19-Jul-14,200,17:00:00,18:10:00,1.17,exact,sacr,1,1,0,n,idavies
 2011,chur,19-Jul-11,200,08:30:00,16:15:00,7.75,NA,cora,1,2,0,y,clishman
-2011,chur,19-Jul-11,200,08:30:00,16:15:00,7.75,NA,baea,1,2,0,y,clishman
 2012,prba,17-Jul-12,199,09:10:00,09:40:00,0.5,exact,glgu,3,1,0,n,jlautenbach
 2012,prba,17-Jul-12,199,09:10:00,09:40:00,0.5,exact,paja,2,1,0,n,jlautenbach
 2012,prba,17-Jul-12,199,09:10:00,09:40:00,0.5,exact,snow,4,1,0,n,jlautenbach
@@ -463,7 +461,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,ikpi,16-Jul-14,197,11:00:00,17:53:00,6.88,exact,brle,1,1,0,n,rhammond
 2013,bylo,16-Jul-13,197,10:00:00,19:00:00,9,exact,glgu,1,1,0,n,fsenezgagnon
 2013,bylo,16-Jul-13,197,10:00:00,19:00:00,9,exact,sacr,2,1,0,n,fsenezgagnon
-2014,chur,16-Jul-14,197,12:00:00,16:00:00,4,exact,baea,1,2,0,y,lkoloski
 2014,chur,16-Jul-14,197,12:00:00,16:00:00,4,exact,paja,3,2,0,y,lkoloski
 2014,coat,16-Jul-14,197,09:00:00,18:00:00,9,exact,paja,2,3,0,y,crew1
 2014,coat,16-Jul-14,197,09:00:00,18:00:00,9,est,herg,25,3,0,y,crew1
@@ -669,7 +666,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,iglo,13-Jul-14,194,11:00:00,23:00:00,12,est,sacr,1,1,0,n,nlecomte
 2012,chur,12-Jul-12,194,17:15:00,18:00:00,0.75,exact,amcr,2,2,0,y,jperz
 2012,chur,12-Jul-12,194,17:15:00,18:00:00,0.75,exact,merl,2,2,0,y,jperz
-2014,chur,13-Jul-14,194,16:00:00,17:00:00,1,exact,baea,1,2,0,y,lkoloski
 2014,chur,13-Jul-14,194,16:00:00,17:00:00,1,exact,cora,1,2,0,y,lkoloski
 2014,colv,13-Jul-14,194,12:30:00,14:00:00,1.5,exact,glgu,2,2,0,y,agottesman
 2014,colv,13-Jul-14,194,12:30:00,14:00:00,1.5,exact,paja,1,2,0,y,agottesman
@@ -921,7 +917,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2011,colv,10-Jul-11,191,10:49:00,12:24:00,1.58,exact,paja,2,1,0,n,dpavlik
 2011,colv,10-Jul-11,191,10:49:00,12:24:00,1.58,exact,pefa,1,1,0,n,dpavlik
 2011,colv,10-Jul-11,191,10:49:00,12:24:00,1.58,exact,snow,1,1,0,n,dpavlik
-2012,prba,09-Jul-12,191,13:00:00,14:50:00,1.83,exact,arcticshrew,1,1,0,n,jlautenbach
 2012,prba,09-Jul-12,191,13:00:00,14:50:00,1.83,exact,glgu,4,1,0,n,jlautenbach
 2012,prba,09-Jul-12,191,13:00:00,14:50:00,1.83,exact,paja,2,1,0,n,jlautenbach
 2011,colv,10-Jul-11,191,10:52:00,13:11:00,2.32,exact,agsq,1,1,0,n,bwilkinson
@@ -988,12 +983,10 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,colv,10-Jul-14,191,12:30:00,15:00:00,2.5,exact,agsq,4,2,0,y,lburlingame
 2014,chur,10-Jul-14,191,08:50:00,11:30:00,2.67,exact,cora,2,2,0,y,lkoloski
 2014,chur,10-Jul-14,191,08:50:00,11:30:00,2.67,exact,paja,3,2,0,y,lkoloski
-2012,chur,09-Jul-12,191,08:30:00,16:30:00,8,exact,baea,1,2,0,y,jperz
 2012,chur,09-Jul-12,191,08:30:00,16:30:00,8,exact,paja,3,2,0,y,jperz
 2012,nome,09-Jul-12,191,10:00:00,16:30:00,6.5,exact,cora,3,3,0,y,NA
 2012,nome,09-Jul-12,191,10:00:00,16:30:00,6.5,exact,glgu,2,3,0,y,NA
 2012,nome,09-Jul-12,191,10:00:00,16:30:00,6.5,exact,paja,3,3,0,y,NA
-2012,nome,09-Jul-12,191,10:00:00,16:30:00,6.5,exact,rbvo,2,3,0,y,NA
 2012,nome,09-Jul-12,191,10:00:00,16:30:00,6.5,exact,sacr,13,3,0,y,NA
 2012,nome,09-Jul-12,191,10:00:00,16:30:00,6.5,exact,tuvo,12,3,0,y,NA
 2014,coat,10-Jul-14,191,09:30:00,18:30:00,9,exact,paja,2,3,0,y,crew1
@@ -1096,7 +1089,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,chur,09-Jul-14,190,09:00:00,10:00:00,1,exact,cora,2,2,0,y,lkoloski
 2014,chur,09-Jul-14,190,09:00:00,10:00:00,1,exact,herg,2,2,0,y,lkoloski
 2014,chur,09-Jul-14,190,09:00:00,10:00:00,1,exact,sacr,2,2,0,y,lkoloski
-2014,chur,09-Jul-14,190,11:00:00,12:30:00,1.5,exact,NA,0,2,0,y,lkoloski
 2012,chur,08-Jul-12,190,08:30:00,10:15:00,1.75,exact,cora,2,2,0,y,jperz
 2012,chur,08-Jul-12,190,08:30:00,10:15:00,1.75,exact,herg,4,2,0,y,jperz
 2012,chur,08-Jul-12,190,08:30:00,10:15:00,1.75,est,sacr,3,2,0,y,jperz
@@ -1133,7 +1125,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2013,nome,09-Jul-13,190,13:00:00,17:00:00,4,exact,megu,1,3,0,y,NA
 2013,nome,09-Jul-13,190,13:00:00,17:00:00,4,exact,paja,1,3,0,y,NA
 2013,nome,09-Jul-13,190,13:00:00,17:00:00,4,exact,sacr,1,3,0,y,NA
-2011,chur,09-Jul-11,190,09:00:00,17:00:00,8,NA,glgo,2,2,0,y,edastous
 2012,prba,07-Jul-12,189,14:35:00,15:10:00,0.58,exact,glgu,3,1,0,n,jlautenbach
 2012,prba,07-Jul-12,189,14:35:00,15:10:00,0.58,exact,ltja,3,1,0,n,jlautenbach
 2012,prba,07-Jul-12,189,14:35:00,15:10:00,0.58,exact,snow,1,1,0,n,jlautenbach
@@ -1220,14 +1211,10 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,iglo,08-Jul-14,189,11:00:00,20:00:00,9,exact,cora,1,1,0,n,mtpaquet
 2014,iglo,08-Jul-14,189,11:00:00,20:00:00,9,est,ungu,4,1,0,n,mtpaquet
 2014,iglo,08-Jul-14,189,11:00:00,20:00:00,9,exact,ltja,1,1,0,n,mtpaquet
-2014,chur,08-Jul-14,189,15:20:00,17:15:00,1.92,exact,baea,1,2,0,y,lkoloski
 2014,chur,08-Jul-14,189,15:20:00,17:15:00,1.92,exact,cora,2,2,0,y,lkoloski
 2014,chur,08-Jul-14,189,15:20:00,17:15:00,1.92,exact,herg,2,2,0,y,lkoloski
-2014,chur,08-Jul-14,189,08:50:00,11:30:00,2.67,exact,NA,0,2,0,y,lkoloski
 2014,chur,08-Jul-14,189,11:30:00,14:30:00,3,exact,paja,2,2,0,y,lkoloski
-2013,made,08-Jul-13,189,12:30:00,17:00:00,4.5,exact,baea,1,2,0,y,kbeckmann
 2013,made,08-Jul-13,189,12:30:00,17:00:00,4.5,exact,paja,1,2,0,y,kbeckmann
-2013,made,08-Jul-13,189,12:30:00,18:00:00,5.5,exact,baea,1,2,0,y,lbachellier
 2013,made,08-Jul-13,189,12:30:00,18:00:00,5.5,exact,cora,1,2,0,y,lbachellier
 2013,made,08-Jul-13,189,12:30:00,18:00:00,5.5,est,paja,2,2,0,y,lbachellier
 2013,made,08-Jul-13,189,12:30:00,18:00:00,5.5,est,sacr,2,2,0,y,lbachellier
@@ -1499,7 +1486,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2013,nome,06-Jul-13,187,11:00:00,18:00:00,7,exact,tuvo,1,3,0,y,NA
 2011,chur,06-Jul-11,187,06:55:00,15:30:00,8.58,NA,paja,3,3,0,y,edastous
 2011,chur,06-Jul-11,187,06:55:00,15:30:00,8.58,NA,cora,2,3,0,y,edastous
-2011,chur,06-Jul-11,187,06:55:00,15:30:00,8.58,NA,baea,1,3,0,y,edastous
 2011,prba,05-Jul-11,186,12:50:00,13:02:00,0.2,exact,glgu,2,1,0,n,eames
 2011,prba,05-Jul-11,186,14:10:00,14:45:00,0.58,exact,cora,1,1,0,n,eames
 2011,prba,05-Jul-11,186,14:10:00,14:45:00,0.58,exact,ltja,1,1,0,n,eames
@@ -1605,7 +1591,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,chur,05-Jul-14,186,10:15:00,11:00:00,0.75,exact,cora,1,2,0,y,lkoloski
 2014,chur,05-Jul-14,186,10:15:00,11:00:00,0.75,exact,herg,1,2,0,y,lkoloski
 2014,chur,05-Jul-14,186,10:15:00,11:00:00,0.75,exact,paja,3,2,0,y,lkoloski
-2012,chur,04-Jul-12,186,15:25:00,16:15:00,0.83,exact,baea,1,2,0,y,jperz
 2012,chur,04-Jul-12,186,15:25:00,16:15:00,0.83,exact,cora,2,2,0,y,jperz
 2014,chur,05-Jul-14,186,08:50:00,09:45:00,0.92,exact,herg,1,2,0,y,lkoloski
 2014,chur,05-Jul-14,186,08:50:00,09:45:00,0.92,exact,noha,1,2,0,y,lkoloski
@@ -1717,7 +1702,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2013,colv,04-Jul-13,185,11:45:00,15:30:00,3.75,exact,ltja,11,1,0,n,scarvey
 2013,colv,04-Jul-13,185,11:45:00,15:30:00,3.75,exact,paja,6,1,0,n,scarvey
 2013,colv,04-Jul-13,185,11:45:00,15:30:00,3.75,exact,rutu,10,1,0,n,scarvey
-2013,chau,04-Jul-13,185,12:20:00,16:20:00,4,est,arha,1,1,0,n,mmudge
 2013,chau,04-Jul-13,185,12:20:00,16:20:00,4,est,glgu,4,1,0,n,mmudge
 2013,chau,04-Jul-13,185,12:20:00,16:20:00,4,est,paja,2,1,0,n,mmudge
 2013,chau,04-Jul-13,185,12:20:00,16:20:00,4,est,sacr,2,1,0,n,mmudge
@@ -1944,7 +1928,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2013,nome,03-Jul-13,184,10:00:00,13:00:00,3,exact,sacr,1,4,0,y,NA
 2013,nome,03-Jul-13,184,10:00:00,13:00:00,3,exact,megu,1,4,0,y,NA
 2013,nome,03-Jul-13,184,10:00:00,13:00:00,3,exact,glgu,6,4,0,y,NA
-2012,chau,01-Jul-12,183,10:00:00,10:30:00,0.5,exact,wtse,1,1,0,n,mboldenow
 2012,prba,01-Jul-12,183,12:50:00,14:20:00,1.5,exact,agsq,1,1,0,n,jlautenbach
 2012,prba,01-Jul-12,183,12:50:00,14:20:00,1.5,exact,cora,1,1,0,n,jlautenbach
 2012,prba,01-Jul-12,183,12:50:00,14:20:00,1.5,exact,glgu,4,1,0,n,jlautenbach
@@ -2039,7 +2022,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2012,cari,01-Jul-12,183,09:45:00,16:00:00,6.25,exact,ltja,1,1,0,n,akneidel
 2012,cari,01-Jul-12,183,09:45:00,16:00:00,6.25,exact,paja,4,1,0,n,akneidel
 2012,cari,01-Jul-12,183,09:45:00,16:00:00,6.25,exact,snow,2,1,0,n,akneidel
-2012,cari,01-Jul-12,183,09:45:00,16:00:00,6.25,exact,wolf,2,1,0,n,akneidel
 2012,cari,01-Jul-12,183,09:45:00,16:00:00,6.25,exact,arfo,1,1,0,n,bwinn
 2012,cari,01-Jul-12,183,09:45:00,16:00:00,6.25,exact,glgu,8,1,0,n,bwinn
 2012,cari,01-Jul-12,183,09:45:00,16:00:00,6.25,exact,ltja,6,1,0,n,bwinn
@@ -2066,7 +2048,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2013,bylo,02-Jul-13,183,13:00:00,23:00:00,10,exact,arfo,1,1,0,n,fsenezgagnon
 2013,bylo,02-Jul-13,183,13:00:00,23:00:00,10,exact,glgu,2,1,0,n,fsenezgagnon
 2013,bylo,02-Jul-13,183,13:00:00,23:00:00,10,exact,sacr,2,1,0,n,fsenezgagnon
-2014,chur,02-Jul-14,183,11:15:00,11:45:00,0.5,exact,NA,0,2,0,y,lkoloski
 2014,chur,02-Jul-14,183,08:45:00,10:30:00,1.75,exact,cora,1,2,0,y,lkoloski
 2014,chur,02-Jul-14,183,08:45:00,10:30:00,1.75,exact,paja,7,2,0,y,lkoloski
 2013,barr,02-Jul-13,183,14:15:00,18:00:00,3.75,est,glgu,10,2,0,y,lrensel
@@ -2191,7 +2172,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,barr,01-Jul-14,182,08:45:00,13:10:00,4.42,NA,glgu,11,1,0,n,asterling
 2014,barr,01-Jul-14,182,08:45:00,13:10:00,4.42,NA,poja,5,1,0,n,asterling
 2014,barr,01-Jul-14,182,08:45:00,13:10:00,4.42,NA,paja,2,1,0,n,asterling
-2014,barr,01-Jul-14,182,08:45:00,13:10:00,4.42,NA,lewe,1,1,0,n,asterling
 2012,chau,30-Jun-12,182,13:00:00,18:00:00,5,exact,glgu,3,1,0,n,mboldenow
 2012,chau,30-Jun-12,182,13:00:00,18:00:00,5,exact,ltja,4,1,0,n,mboldenow
 2012,chau,30-Jun-12,182,13:00:00,18:00:00,5,exact,poja,3,1,0,n,mboldenow
@@ -2217,21 +2197,15 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,barr,01-Jul-14,182,NA,NA,6,NA,poja,4,1,0,n,jmarin
 2014,barr,01-Jul-14,182,NA,NA,6,NA,snow,1,1,0,n,jmarin
 2014,barr,01-Jul-14,182,NA,NA,6,NA,brle,1,1,0,n,jmarin
-2014,chur,01-Jul-14,182,09:30:00,10:00:00,0.5,exact,NA,0,2,0,y,lkoloski
-2014,chur,01-Jul-14,182,11:00:00,11:30:00,0.5,exact,NA,0,2,0,y,lkoloski
 2012,chur,30-Jun-12,182,13:45:00,14:15:00,0.5,est,cora,1,2,0,y,jperz
 2012,chur,30-Jun-12,182,13:45:00,14:15:00,0.5,exact,herg,6,2,0,y,jperz
-2012,chur,30-Jun-12,182,16:00:00,16:30:00,0.5,exact,baea,1,2,0,y,jperz
 2012,chur,30-Jun-12,182,16:00:00,16:30:00,0.5,exact,cora,1,2,0,y,jperz
 2012,chur,30-Jun-12,182,16:00:00,16:30:00,0.5,exact,noha,1,2,0,y,jperz
 2012,chur,30-Jun-12,182,15:15:00,16:00:00,0.75,exact,cora,1,2,0,y,jperz
 2012,chur,30-Jun-12,182,15:15:00,16:00:00,0.75,exact,noha,1,2,0,y,jperz
 2014,nome,01-Jul-14,182,09:00:00,10:00:00,1,exact,glgu,3,2,0,y,NA
 2014,nome,01-Jul-14,182,09:00:00,10:00:00,1,exact,paja,1,2,0,y,NA
-2014,chur,01-Jul-14,182,09:30:00,10:30:00,1,exact,NA,0,2,0,y,jperz
-2014,chur,01-Jul-14,182,10:30:00,11:30:00,1,exact,baea,1,2,0,y,jperz
 2014,chur,01-Jul-14,182,10:30:00,11:30:00,1,exact,cora,1,2,0,y,jperz
-2014,chur,01-Jul-14,182,12:00:00,13:30:00,1.5,exact,baea,1,2,0,y,lkoloski
 2014,chur,01-Jul-14,182,12:00:00,13:30:00,1.5,exact,cora,1,2,0,y,lkoloski
 2014,chur,01-Jul-14,182,12:00:00,13:30:00,1.5,exact,herg,3,2,0,y,lkoloski
 2014,chur,01-Jul-14,182,12:00:00,13:30:00,1.5,exact,paja,2,2,0,y,lkoloski
@@ -2668,7 +2642,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2011,cari,28-Jun-11,179,09:15:00,18:00:00,8.75,exact,poja,2,1,0,n,sfreeman
 2011,cari,28-Jun-11,179,09:15:00,18:00:00,8.75,exact,snow,2,1,0,n,sfreeman
 2012,chur,27-Jun-12,179,08:40:00,09:20:00,0.67,exact,herg,1,2,0,y,jperz
-2014,chur,28-Jun-14,179,09:00:00,09:45:00,0.75,exact,NA,0,2,0,y,lkoloski
 2014,chur,28-Jun-14,179,10:00:00,11:30:00,1.5,exact,paja,1,2,0,y,lkoloski
 2012,chur,27-Jun-12,179,13:15:00,15:00:00,1.75,exact,cora,2,2,0,y,jperz
 2012,chur,27-Jun-12,179,13:15:00,15:00:00,1.75,exact,herg,1,2,0,y,jperz
@@ -2676,7 +2649,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2013,colv,28-Jun-13,179,11:30:00,13:30:00,2,exact,glgu,3,2,0,n,scarvey
 2013,colv,28-Jun-13,179,11:30:00,13:30:00,2,exact,paja,3,2,0,n,scarvey
 2013,colv,28-Jun-13,179,11:30:00,13:30:00,2,exact,rutu,6,2,0,n,scarvey
-2012,chur,27-Jun-12,179,09:20:00,11:30:00,2.17,exact,baea,1,2,0,y,jperz
 2012,chur,27-Jun-12,179,09:20:00,11:30:00,2.17,exact,herg,1,2,0,y,jperz
 2012,chur,27-Jun-12,179,09:20:00,11:30:00,2.17,exact,merl,2,2,0,y,jperz
 2014,chur,28-Jun-14,179,09:00:00,11:30:00,2.5,exact,cora,1,2,0,y,jperz
@@ -2706,7 +2678,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2012,nome,27-Jun-12,179,10:00:00,16:00:00,6,exact,glgu,13,5,0,y,NA
 2012,nome,27-Jun-12,179,10:00:00,16:00:00,6,exact,ltja,1,5,0,y,NA
 2012,nome,27-Jun-12,179,10:00:00,16:00:00,6,exact,megu,6,5,0,y,NA
-2012,nome,27-Jun-12,179,10:00:00,16:00:00,6,exact,ospr,2,5,0,y,NA
 2012,nome,27-Jun-12,179,10:00:00,16:00:00,6,exact,paja,4,5,0,y,NA
 2012,nome,27-Jun-12,179,10:00:00,16:00:00,6,exact,pefa,1,5,0,y,NA
 2012,nome,27-Jun-12,179,10:00:00,16:00:00,6,exact,sacr,15,5,0,y,NA
@@ -2810,7 +2781,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2013,prba,27-Jun-13,178,13:00:00,18:00:00,5,exact,paja,1,1,0,n,brobinson
 2013,prba,27-Jun-13,178,13:00:00,18:00:00,5,exact,snow,1,1,0,n,brobinson
 2013,prba,27-Jun-13,178,13:00:00,18:00:00,5,exact,glgu,1,1,0,n,brobinson
-2013,chau,27-Jun-13,178,11:30:00,16:45:00,5.25,est,arha,1,1,0,n,mmudge
 2013,chau,27-Jun-13,178,11:30:00,16:45:00,5.25,est,glgu,1,1,0,n,mmudge
 2013,chau,27-Jun-13,178,11:30:00,16:45:00,5.25,est,ltja,75,1,0,n,mmudge
 2013,chau,27-Jun-13,178,11:30:00,16:45:00,5.25,est,rutu,1,1,0,n,mmudge
@@ -2885,7 +2855,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2012,chur,26-Jun-12,178,12:30:00,17:30:00,5,exact,noha,1,2,0,y,jperz
 2012,chur,26-Jun-12,178,12:30:00,17:30:00,5,exact,rlha,1,2,0,y,jperz
 2012,chur,26-Jun-12,178,12:30:00,17:30:00,5,exact,sacr,2,2,0,y,jperz
-2014,chur,27-Jun-14,178,08:40:00,14:00:00,5.33,exact,baea,1,2,0,y,jperz
 2014,chur,27-Jun-14,178,08:40:00,14:00:00,5.33,exact,noha,1,2,0,y,jperz
 2014,chur,27-Jun-14,178,08:40:00,14:00:00,5.33,exact,paja,1,2,0,y,jperz
 2014,chur,27-Jun-14,178,08:40:00,14:00:00,5.33,exact,sacr,1,2,0,y,jperz
@@ -3004,7 +2973,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2013,prba,26-Jun-13,177,09:30:00,15:00:00,5.5,exact,noha,1,1,0,n,brobinson
 2013,prba,26-Jun-13,177,09:30:00,15:00:00,5.5,exact,paja,2,1,0,n,brobinson
 2011,cakr,26-Jun-11,177,11:00:00,16:35:00,5.58,est,glgu,70,1,0,n,lpadegimas
-2011,cakr,26-Jun-11,177,11:00:00,16:35:00,5.58,exact,graj,1,1,0,n,lpadegimas
 2011,cakr,26-Jun-11,177,11:00:00,16:35:00,5.58,exact,megu,12,1,0,n,lpadegimas
 2011,cakr,26-Jun-11,177,11:00:00,16:35:00,5.58,exact,paja,9,1,0,n,lpadegimas
 2014,chau,26-Jun-14,177,11:40:00,17:15:00,5.58,exact,paja,2,1,0,n,jdiener
@@ -3230,7 +3198,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,chur,25-Jun-14,176,15:30:00,17:00:00,1.5,exact,cora,1,2,0,y,jperz
 2012,chur,24-Jun-12,176,15:15:00,17:30:00,2.25,exact,cora,2,2,0,y,jperz
 2012,chur,24-Jun-12,176,15:15:00,17:30:00,2.25,exact,paja,6,2,0,y,jperz
-2012,chur,24-Jun-12,176,12:00:00,15:00:00,3,exact,baea,1,2,0,y,jperz
 2012,chur,24-Jun-12,176,12:00:00,15:00:00,3,exact,unra,1,2,0,y,jperz
 2014,chur,25-Jun-14,176,08:45:00,14:30:00,5.75,exact,cora,4,2,0,y,jperz
 2014,nome,25-Jun-14,176,09:00:00,16:00:00,7,exact,glgu,6,2,0,y,NA
@@ -3241,7 +3208,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,colv,25-Jun-14,176,11:37:00,19:15:00,7.63,exact,ltja,3,2,0,y,agottesman
 2014,colv,25-Jun-14,176,11:37:00,19:15:00,7.63,exact,rutu,7,2,0,y,agottesman
 2014,colv,25-Jun-14,176,11:37:00,19:15:00,7.63,exact,pefa,1,2,0,y,agottesman
-2014,colv,25-Jun-14,176,11:37:00,19:15:00,7.63,exact,baea,1,2,0,y,agottesman
 2014,colv,25-Jun-14,176,11:37:00,19:15:00,7.63,exact,agsq,15,2,0,y,agottesman
 2014,colv,25-Jun-14,176,11:00:00,20:00:00,9,exact,glgu,3,2,0,y,tdonnelly
 2014,colv,25-Jun-14,176,11:00:00,20:00:00,9,exact,paja,3,2,0,y,tdonnelly
@@ -3717,7 +3683,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2012,prba,21-Jun-12,173,08:30:00,14:30:00,6,exact,arfo,1,1,0,n,jlautenbach
 2012,prba,21-Jun-12,173,08:30:00,14:30:00,6,exact,cora,3,1,0,n,jlautenbach
 2012,prba,21-Jun-12,173,08:30:00,14:30:00,6,exact,glgu,5,1,0,n,jlautenbach
-2012,prba,21-Jun-12,173,08:30:00,14:30:00,6,exact,lewe,1,1,0,n,jlautenbach
 2012,prba,21-Jun-12,173,08:30:00,14:30:00,6,exact,ltja,4,1,0,n,jlautenbach
 2012,prba,21-Jun-12,173,08:30:00,14:30:00,6,exact,paja,3,1,0,n,jlautenbach
 2012,prba,21-Jun-12,173,08:30:00,14:30:00,6,exact,poja,1,1,0,n,jlautenbach
@@ -3947,7 +3912,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2013,nome,21-Jun-13,172,11:00:00,18:30:00,7.5,exact,megu,2,4,0,y,NA
 2013,nome,21-Jun-13,172,11:00:00,18:30:00,7.5,exact,sacr,4,4,0,y,NA
 2011,chur,21-Jun-11,172,13:15:00,16:30:00,3.25,NA,unle,1,3,0,y,edastous
-2011,chur,21-Jun-11,172,09:15:00,11:30:00,2.25,NA,glgo,1,3,0,y,edastous
 2014,cakr,20-Jun-14,171,16:10:00,17:10:00,1,exact,glgu,29,1,0,n,jeschenroeder
 2014,cakr,20-Jun-14,171,16:10:00,17:10:00,1,exact,paja,1,1,0,n,jeschenroeder
 2014,cakr,20-Jun-14,171,16:10:00,17:10:00,1,exact,cora,1,1,0,n,jeschenroeder
@@ -4084,7 +4048,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,nome,20-Jun-14,171,09:00:00,15:30:00,6.5,exact,megu,5,2,0,y,NA
 2014,nome,20-Jun-14,171,09:00:00,15:30:00,6.5,exact,sacr,2,2,0,y,NA
 2014,nome,20-Jun-14,171,09:00:00,15:30:00,6.5,exact,cora,2,2,0,y,NA
-2014,nome,20-Jun-14,171,09:00:00,15:30:00,6.5,exact,beav,1,2,0,y,NA
 2012,made,19-Jun-12,171,10:00:00,17:00:00,7,exact,cora,3,2,0,n,fsmith
 2012,made,19-Jun-12,171,10:00:00,17:00:00,7,exact,glgu,3,2,0,n,fsmith
 2012,made,19-Jun-12,171,10:00:00,17:00:00,7,exact,paja,3,2,0,n,fsmith
@@ -4783,11 +4746,9 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2013,made,16-Jun-13,167,10:00:00,13:00:00,3,exact,glgu,3,2,0,y,kbeckmann
 2013,made,16-Jun-13,167,10:00:00,13:00:00,3,exact,paja,2,2,1,y,kbeckmann
 2013,made,16-Jun-13,167,10:00:00,13:00:00,3,est,sacr,21,2,0,y,kbeckmann
-2014,chur,16-Jun-14,167,13:30:00,16:30:00,3,exact,baea,1,2,0,y,jperz
 2014,chur,16-Jun-14,167,13:30:00,16:30:00,3,exact,cora,2,2,0,y,jperz
 2013,made,16-Jun-13,167,14:00:00,17:15:00,3.25,exact,glgu,10,2,0,y,gmccune
 2013,made,16-Jun-13,167,14:00:00,17:15:00,3.25,exact,sacr,7,2,0,y,gmccune
-2014,chur,16-Jun-14,167,09:30:00,13:30:00,4,exact,baea,2,2,0,y,jperz
 2014,chur,16-Jun-14,167,09:30:00,13:30:00,4,exact,cora,3,2,0,y,jperz
 2014,chur,16-Jun-14,167,09:30:00,13:30:00,4,exact,paja,2,2,0,y,jperz
 2014,chur,16-Jun-14,167,08:30:00,14:00:00,5.5,exact,cora,1,2,0,y,lkoloski
@@ -5300,7 +5261,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,colv,13-Jun-14,164,11:05:00,19:00:00,7.92,exact,rutu,4,1,0,n,agottesman
 2014,colv,13-Jun-14,164,11:05:00,19:00:00,7.92,exact,refo,1,1,0,n,agottesman
 2014,colv,13-Jun-14,164,11:05:00,19:00:00,7.92,exact,agsq,6,1,0,n,agottesman
-2014,burn,13-Jun-14,164,09:00:00,17:00:00,8,exact,baea,2,1,0,n,dmcrae
 2014,burn,13-Jun-14,164,09:00:00,17:00:00,8,exact,noha,2,1,0,n,dmcrae
 2014,burn,13-Jun-14,164,09:00:00,17:00:00,8,exact,sacr,2,1,0,n,dmcrae
 2014,burn,13-Jun-14,164,09:00:00,17:00:00,8,exact,herg,12,1,0,n,dmcrae
@@ -5456,7 +5416,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,colv,12-Jun-14,163,11:30:00,18:30:00,7,exact,ltja,2,1,0,n,tdonnelly
 2014,colv,12-Jun-14,163,11:30:00,18:30:00,7,exact,cora,1,1,0,n,tdonnelly
 2014,colv,12-Jun-14,163,11:30:00,18:30:00,7,exact,rutu,3,1,0,n,tdonnelly
-2014,colv,12-Jun-14,163,11:30:00,18:30:00,7,exact,baea,1,1,0,n,tdonnelly
 2014,colv,12-Jun-14,163,11:30:00,18:30:00,7,exact,agsq,8,1,0,n,tdonnelly
 2013,cari,12-Jun-13,163,09:00:00,16:30:00,7.5,exact,brle,1,1,0,n,bhiggins
 2013,cari,12-Jun-13,163,09:00:00,16:30:00,7.5,exact,glgu,9,1,0,n,bhiggins
@@ -5517,7 +5476,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2012,colv,11-Jun-12,163,09:57:00,18:54:00,8.95,exact,paja,2,1,0,n,bwilkinson
 2012,colv,11-Jun-12,163,09:57:00,18:54:00,8.95,exact,rutu,3,1,0,n,bwilkinson
 2012,colv,11-Jun-12,163,09:57:00,18:54:00,8.95,exact,snow,1,1,0,n,bwilkinson
-2014,burn,12-Jun-14,163,09:00:00,18:00:00,9,exact,baea,2,1,0,n,dmcrae
 2014,burn,12-Jun-14,163,09:00:00,18:00:00,9,exact,noha,1,1,0,n,dmcrae
 2014,burn,12-Jun-14,163,09:00:00,18:00:00,9,exact,sacr,3,1,0,n,dmcrae
 2014,burn,12-Jun-14,163,09:00:00,18:00:00,9,exact,cora,6,1,0,n,dmcrae
@@ -5909,7 +5867,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2013,ikpi,10-Jun-13,161,13:50:00,20:00:00,6.17,exact,cora,1,1,0,n,acook
 2013,ikpi,10-Jun-13,161,13:50:00,20:00:00,6.17,est,glgu,6,1,0,n,acook
 2013,ikpi,10-Jun-13,161,13:50:00,20:00:00,6.17,est,paja,5,1,0,n,acook
-2011,cakr,10-Jun-11,161,10:15:00,16:30:00,6.25,exact,blki,20,1,0,n,lpadegimas
 2011,cakr,10-Jun-11,161,10:15:00,16:30:00,6.25,exact,bltu,3,1,0,n,lpadegimas
 2011,cakr,10-Jun-11,161,10:15:00,16:30:00,6.25,est,glgu,500,1,0,n,lpadegimas
 2011,cakr,10-Jun-11,161,10:15:00,16:30:00,6.25,exact,gwgu,2,1,0,n,lpadegimas
@@ -6134,7 +6091,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,ikpi,09-Jun-14,160,10:05:00,16:30:00,6.42,exact,ltja,3,1,0,n,pchilton
 2012,colv,08-Jun-12,160,09:56:00,16:44:00,6.8,exact,agsq,5,1,0,n,bwilkinson
 2012,colv,08-Jun-12,160,09:56:00,16:44:00,6.8,exact,glgu,15,1,0,n,bwilkinson
-2012,colv,08-Jun-12,160,09:56:00,16:44:00,6.8,exact,lewe,1,1,0,n,bwilkinson
 2012,colv,08-Jun-12,160,09:56:00,16:44:00,6.8,exact,ltja,2,1,0,n,bwilkinson
 2012,colv,08-Jun-12,160,09:56:00,16:44:00,6.8,exact,paja,2,1,0,n,bwilkinson
 2012,colv,08-Jun-12,160,09:56:00,16:44:00,6.8,exact,rutu,5,1,0,n,bwilkinson
@@ -6204,7 +6160,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,cari,09-Jun-14,160,10:00:00,17:30:00,7.5,exact,paja,5,1,0,n,idavies
 2014,cari,09-Jun-14,160,10:00:00,17:30:00,7.5,exact,rlha,2,1,0,n,idavies
 2014,cari,09-Jun-14,160,10:00:00,17:30:00,7.5,exact,seow,3,1,0,n,idavies
-2011,chur,09-Jun-11,160,09:00:00,15:00:00,6,NA,glgo,2,1,0,n,edastous
 2014,prba,08-Jun-14,159,08:28:00,10:10:00,1.7,est,glgu,6,1,0,n,chelms
 2014,prba,08-Jun-14,159,08:28:00,10:10:00,1.7,est,poja,7,1,0,n,chelms
 2014,prba,08-Jun-14,159,08:28:00,10:10:00,1.7,est,paja,2,1,0,n,chelms
@@ -6676,7 +6631,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,colv,06-Jun-14,157,14:00:00,16:00:00,2,exact,rutu,8,2,0,y,agottesman
 2014,colv,06-Jun-14,157,14:00:00,16:00:00,2,exact,agsq,6,2,0,y,agottesman
 2014,chur,06-Jun-14,157,08:30:00,11:00:00,2.5,exact,arte,3,2,0,y,jperz
-2014,chur,06-Jun-14,157,08:30:00,11:00:00,2.5,exact,bogu,4,2,0,y,jperz
 2014,chur,06-Jun-14,157,08:30:00,11:00:00,2.5,exact,cora,1,2,0,y,jperz
 2014,chur,06-Jun-14,157,08:30:00,11:00:00,2.5,exact,herg,1,2,0,y,jperz
 2014,colv,06-Jun-14,157,15:30:00,18:00:00,2.5,exact,glgu,15,2,0,y,wkennerley
@@ -7049,7 +7003,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2012,colv,02-Jun-12,154,11:30:00,15:47:00,4.28,exact,rutu,6,1,0,n,bwilkinson
 2012,colv,02-Jun-12,154,11:30:00,15:47:00,4.28,exact,sacr,1,1,0,n,bwilkinson
 2012,colv,02-Jun-12,154,11:30:00,15:47:00,4.28,exact,snow,2,1,0,n,bwilkinson
-2014,chur,03-Jun-14,154,10:30:00,11:20:00,0.83,exact,bogu,5,2,0,y,jperz
 2014,chur,03-Jun-14,154,10:30:00,11:20:00,0.83,exact,cora,1,2,0,y,jperz
 2014,chur,03-Jun-14,154,10:30:00,11:20:00,0.83,exact,herg,2,2,0,y,jperz
 2014,chur,03-Jun-14,154,09:00:00,10:00:00,1,exact,cora,2,2,0,y,jperz
@@ -7057,7 +7010,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2013,barr,03-Jun-13,154,14:02:00,15:44:00,1.7,exact,glgu,4,2,0,y,vloverti
 2013,barr,03-Jun-13,154,14:02:00,15:44:00,1.7,exact,poja,1,2,0,y,vloverti
 2014,chur,03-Jun-14,154,14:45:00,17:00:00,2.25,exact,amcr,1,2,0,y,jperz
-2014,chur,03-Jun-14,154,14:45:00,17:00:00,2.25,exact,bogu,2,2,0,y,jperz
 2014,chur,03-Jun-14,154,14:45:00,17:00:00,2.25,exact,herg,2,2,0,y,jperz
 2013,barr,03-Jun-13,154,10:25:00,13:05:00,2.67,exact,arfo,1,2,0,y,vloverti
 2013,barr,03-Jun-13,154,10:25:00,13:05:00,2.67,exact,glgu,3,2,0,y,vloverti
@@ -7153,7 +7105,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2012,cakr,01-Jun-12,153,09:50:00,15:30:00,5.67,exact,sacr,8,1,0,n,edastous
 2014,chur,02-Jun-14,153,12:10:00,13:30:00,1.33,exact,noha,1,2,0,y,gholmes
 2014,chur,02-Jun-14,153,12:10:00,13:30:00,1.33,exact,herg,6,2,0,y,lkoloski
-2014,chur,02-Jun-14,153,15:30:00,17:30:00,2,exact,bogu,2,2,0,y,jperz
 2014,chur,02-Jun-14,153,15:30:00,17:30:00,2,exact,merl,1,2,0,y,jperz
 2014,chur,02-Jun-14,153,15:30:00,17:30:00,2,exact,noha,1,2,0,y,jperz
 2014,chur,02-Jun-14,153,14:30:00,16:30:00,2,exact,cora,2,2,0,y,lkoloski
@@ -7183,7 +7134,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,nome,02-Jun-14,153,09:00:00,15:00:00,6,exact,megu,5,4,0,y,NA
 2014,nome,02-Jun-14,153,09:00:00,15:00:00,6,exact,bltu,2,4,0,y,NA
 2014,nome,02-Jun-14,153,09:00:00,15:00:00,6,exact,pefa,1,4,0,y,NA
-2014,nome,02-Jun-14,153,09:00:00,15:00:00,6,exact,otte,1,4,0,y,NA
 2012,nome,01-Jun-12,153,10:00:00,18:00:00,8,exact,agsq,3,6,0,y,NA
 2012,nome,01-Jun-12,153,10:00:00,18:00:00,8,exact,cora,1,6,0,y,NA
 2012,nome,01-Jun-12,153,10:00:00,18:00:00,8,exact,glgu,13,6,0,y,NA
@@ -7237,7 +7187,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2013,colv,01-Jun-13,152,10:15:00,15:00:00,4.75,exact,agsq,5,2,0,y,rharned
 2013,colv,01-Jun-13,152,10:15:00,15:00:00,4.75,exact,brle,1,2,0,y,rharned
 2013,colv,01-Jun-13,152,10:15:00,15:00:00,4.75,exact,glgu,22,2,0,y,rharned
-2013,colv,01-Jun-13,152,10:15:00,15:00:00,4.75,exact,lewe,1,2,0,y,rharned
 2013,colv,01-Jun-13,152,10:15:00,15:00:00,4.75,exact,ltja,4,2,0,y,rharned
 2013,colv,01-Jun-13,152,10:15:00,15:00:00,4.75,exact,paja,1,2,0,y,rharned
 2013,colv,01-Jun-13,152,10:15:00,15:00:00,4.75,exact,poja,1,2,0,y,rharned
@@ -7581,8 +7530,6 @@ Year,Site,Date,Jdate,Start_time,End_time,Hours,Count_type,Species,Count,Num_obse
 2014,nome,26-May-14,146,09:00:00,17:00:00,8,exact,pefa,1,4,0,y,NA
 2011,nome,26-May-11,146,10:00:00,13:00:00,3,exact,agsq,2,7,0,y,wenglish
 2011,nome,26-May-11,146,10:00:00,13:00:00,3,exact,glgu,5,7,0,y,wenglish
-2013,nome,26-May-13,146,10:00:00,19:00:00,9,exact,baea,1,4,0,y,NA
-2013,nome,26-May-13,146,10:00:00,19:00:00,9,exact,nogo,1,4,0,y,NA
 2013,nome,26-May-13,146,10:00:00,19:00:00,9,exact,noha,1,4,0,y,NA
 2013,nome,26-May-13,146,10:00:00,19:00:00,9,exact,pefa,1,4,0,y,NA
 2013,nome,26-May-13,146,10:00:00,19:00:00,9,exact,rlha,1,4,0,y,NA

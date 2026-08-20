@@ -41,7 +41,6 @@ glimpse(lemmings_data)
 
 All the fields seem to have a correct data type, suggesting that no unexpected value types are present. Some field are categorical and we will check the unique values for those and compare those to the existing metadata.
 
-
 Check NAs frequency
 
 ```{r}
@@ -49,7 +48,7 @@ lemmings_data %>%
    miss_var_summary()
 ```
 
-Notes have mostly missing values, which is expected for such open ended field. 11% of missing data for Observer is somewhat more problematic, but will not perclude analysis. The missing values in the Location files are more problematic since it needs to be used when joining other tables.
+Notes have mostly missing values, which is expected for such open ended field. 11% of missing data for Observer is somewhat more problematic, but will not perclude analysis. The Location values are not matching the other tables and will be dropped.
 
 
 Let's have a look at the Notes:
@@ -59,7 +58,7 @@ lemmings_data %>%
   distinct(Notes)
 ```
 
-Might be useful information, so we will keep it desptite this field being sparse.
+Might be useful information in general but not for our teaching purposes, so we will drop it as well.
 
 Check Categorical fields
 
@@ -70,11 +69,15 @@ lemmings_data %>%
 
 It seems that the Location field is not well standardized and might not add much information. We will drop that attribute.
 
+
+### Data Cleaning
+
+#### Observers
+
 ```{r}
 lemmings_data %>% 
-  distinct(Observer )
+  distinct(Observer)
 ```
-
 
 Load the Observers from the table that was derived from the Bird nest table
 
@@ -151,31 +154,39 @@ lemmings_good_obs <- lemmings_first_obs %>%
 
 
 
-
+#### Species
 
 ```{r}
 lemmings_good_obs %>%
   distinct(Species)
 ```
 
-That's a lot of unique species
+That's a lot of unique species... probaly more any predators than just lemmings
+
+
+Let's see if those sepcies are all in our species table"
 
 ```{r}
 species_data <- read_csv(here(datadir_processed, "species.csv"))
-```
 
-```{r}
 lemmings_good_obs %>%
 anti_join(species_data, join_by(Species == Code)) %>%
   distinct(Species)
 
 ```
 
+15 species are not in our master species table. However they only account for 53 row in our table, so we will simply drop those rows:
+
+```{r}
+lemmings_good_sp <- lemmings_good_obs %>% 
+  filter(Species %in% species_data$Code)
+```
+
 Let's write the cleaned Lemmings table to a csv file:
 
 ```{r}
-lemmings_good_obs %>%
-  select(-Location, -Notes) %>%
+lemmings_good_sp %>%
+  select(-Location, -Notes) %>%   # no valuable info in those columns
   write_csv(here(datadir_processed, "lemmings_fixed.csv"))
 ```
 
