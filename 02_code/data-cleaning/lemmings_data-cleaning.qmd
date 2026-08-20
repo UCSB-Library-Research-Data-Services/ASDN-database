@@ -79,12 +79,12 @@ lemmings_data %>%
 Load the Observers from the table that was derived from the Bird nest table
 
 ```{r}
-observers_data <- read_csv(here(datadir_processed, observers_file))
+observers_nests <- read_csv(here(datadir_processed, observers_file))
 ```
 Let's see the observers that are not listed in the bird nest observation table
 
 ```{r}
-anti_join(lemmings_data,observers_data, join_by(Observer == Abbreviation)) %>%
+anti_join(lemmings_data, observers_nests, join_by(Observer == Abbreviation)) %>%
   distinct(Observer)
 ```
 
@@ -92,9 +92,10 @@ We have many occurrence of multiple observers listed in one cell. We will take t
 
 ```{r}
 missing_observers <- lemmings_data %>%
-  separate_rows(Observer, sep="[,+/]") %>% # split multiple entries per cell into separate rows
+  separate_rows(Observer, sep="[,+/]") %>%  # split multiple entries per cell into separate rows
+  mutate(Observer = trimws(Observer)) %>%  # some observers have leading spaces
   distinct(Observer) %>%
-  full_join(observers_data, join_by(Observer == Abbreviation), keep = TRUE) %>% 
+  full_join(observers_nests, join_by(Observer == Abbreviation), keep = TRUE) %>% 
   arrange(Observer) %>%
   filter(is.na(Abbreviation))
 ```
@@ -110,9 +111,24 @@ Manually editing this file in Excel:
 
 - inventing names that matched the initial + last name logic for the abreviation
 - dropped rows containing words like all, crew, weather, ...
+- remove some duplicates
 
 
 ```{r}
 observers_fixed <- read_csv(here(datadir_processed, "lemming_observers_fixed.csv"))
+```
+
+Merge with the exisintg oberser table:
+
+```{r}
+observers_all <- bind_rows(observers_nests, observers_fixed)
+```
+
+
+Keep only the Lemmings data that matched an observer
+
+```{r}
+test <- observers_all %>%
+left_join(lemmings_data, join_by(Abbreviation == Observer))
 ```
 
