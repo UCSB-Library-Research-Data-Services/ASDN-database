@@ -110,8 +110,7 @@ write_csv(missing_observers, here(datadir_processed, "lemming_observers_missing.
 Manually editing this file in Excel:
 
 - inventing names that matched the initial + last name logic for the abreviation
-- dropped rows containing words like all, crew, weather, ...
-- remove some duplicates
+- dropped rows containing words like: all, crew, weather, ...
 
 
 ```{r}
@@ -125,10 +124,58 @@ observers_all <- bind_rows(observers_nests, observers_fixed)
 ```
 
 
-Keep only the Lemmings data that matched an observer
+Keep only the first observer for multiple observers entries and remove any spaces
 
 ```{r}
-test <- observers_all %>%
-left_join(lemmings_data, join_by(Abbreviation == Observer))
+lemmings_first_obs <- lemmings_data %>%
+  mutate(Observer = trimws(str_split_i(Observer, pattern = "[,+/]", 1))) %>%
+  mutate(Observer = ifelse(Observer == "kshiemrief", "kschiemrief", Observer)) # fix mispelling
+```
+
+Check which Observer values do not exist in the observer_all table
+
+```{r}
+bad_observers <- lemmings_first_obs %>%
+anti_join(observers_all, join_by(Observer == Abbreviation)) %>%
+  distinct(Observer)
+
+bad_observers
+```
+
+Those are all bad entries for Observers, we can set them to NA
+
+```{r}
+lemmings_good_obs <- lemmings_first_obs %>%
+  mutate(Observer = ifelse(Observer %in% bad_observers, NA, Observer)) 
+```
+
+
+
+
+
+```{r}
+lemmings_good_obs %>%
+  distinct(Species)
+```
+
+That's a lot of unique species
+
+```{r}
+species_data <- read_csv(here(datadir_processed, "species.csv"))
+```
+
+```{r}
+lemmings_good_obs %>%
+anti_join(species_data, join_by(Species == Code)) %>%
+  distinct(Species)
+
+```
+
+Let's write the cleaned Lemmings table to a csv file:
+
+```{r}
+lemmings_good_obs %>%
+  select(-Location, -Notes) %>%
+  write_csv(here(datadir_processed, "lemmings_fixed.csv"))
 ```
 
