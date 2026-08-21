@@ -209,22 +209,29 @@ lemmings_good_sp <- lemmings_good_sp %>%
 Let's see if we get errors when trying to convert to the date format:
 
 ```{r}
-lemmings_good_sp %>% 
-  mutate(Date2 = as_date(Date))
+tt <- lemmings_good_sp %>% 
+  mutate(Date2 = dmy(Date),
+         Year2 = year(Date2),
+         Year_comp = ifelse(Year == Year2, TRUE, FALSE))
 ```
 
-No errors. Let's implement the change:
+```{r}
+tt %>% filter(Year_comp == FALSE) %>% select(Year, Date, Date2, Year2, Year_comp)
+tt %>% filter(is.na(Date2)) %>% select(Year, Date, Date2, Year2, Year_comp)
+```
+
+No errors, although `as_date()` would have guessed the wrong format. Let's implement the change:
 
 ```{r}
-lemmings_good_sp <- lemmings_good_sp %>% 
-  mutate(Date = as_date(Date))
+lemmings_good_date <- lemmings_good_sp %>% 
+  mutate(Date = dmy(Date))
 ```
 
 
 Let's write the cleaned Lemmings table to a csv file:
 
 ```{r}
-lemmings_good_sp %>%
+lemmings_good_date %>%
   select(-Location, -Notes) %>%   # no valuable info in those columns
   write_csv(here(datadir_processed, "lemmings_fixed.csv"))
 ```
