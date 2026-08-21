@@ -39,7 +39,7 @@ glimpse(lemmings_data)
 
 ```
 
-All the fields seem to have a correct data type, suggesting that no unexpected value types are present. Some field are categorical and we will check the unique values for those and compare those to the existing metadata.
+All the fields seem to have a correct data type, except for Date, suggesting that no unexpected value types are present. Some field are categorical and we will check the unique values for those and compare those to the existing metadata.
 
 Check NAs frequency
 
@@ -153,7 +153,6 @@ lemmings_good_obs <- lemmings_first_obs %>%
 ```
 
 
-
 #### Species
 
 ```{r}
@@ -181,6 +180,46 @@ anti_join(species_data, join_by(Species == Code)) %>%
 lemmings_good_sp <- lemmings_good_obs %>% 
   filter(Species %in% species_data$Code)
 ```
+
+
+#### Other categorical attributes
+
+Team count should be y or n, but we have a few N. Assuming it is also no:
+
+```{r}
+lemmings_good_sp %>% count(Count_type)
+```
+
+Looks good!
+
+```{r}
+lemmings_good_sp %>% count(Team_count)
+```
+
+Team_count should be y or n, but we have a few N. Assuming it is also no:
+
+```{r}
+lemmings_good_sp <- lemmings_good_sp %>%
+  mutate(Team_count = tolower(Team_count))
+```
+
+
+#### Dates
+
+Let's see if we get errors when trying to convert to the date format:
+
+```{r}
+lemmings_good_sp %>% 
+  mutate(Date2 = as_date(Date))
+```
+
+No errors. Let's implement the change:
+
+```{r}
+lemmings_good_sp <- lemmings_good_sp %>% 
+  mutate(Date = as_date(Date))
+```
+
 
 Let's write the cleaned Lemmings table to a csv file:
 
