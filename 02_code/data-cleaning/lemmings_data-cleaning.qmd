@@ -232,7 +232,8 @@ Let's write the cleaned Lemmings table to a csv file:
 
 ```{r}
 lemmings_good_date %>%
-  select(-Location, -Notes) %>%   # no valuable info in those columns
+  select(-Location, -Notes) %>%    # no valuable info in those columns
+  filter(!is.na(Start_time) ) %>%  # will have to be part of the primary key (loosing 44 entries)
   write_csv(here(datadir_processed, "lemmings_fixed.csv"))
 ```
 
