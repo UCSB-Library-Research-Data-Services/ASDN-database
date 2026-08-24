@@ -132,7 +132,7 @@ Keep only the first observer for multiple observers entries and remove any space
 ```{r}
 lemmings_first_obs <- lemmings_data %>%
   mutate(Observer = trimws(str_split_i(Observer, pattern = "[,+/]", 1))) %>%
-  mutate(Observer = ifelse(Observer == "kshiemrief", "kschiemrief", Observer)) # fix mispelling
+  mutate(Observer = ifelse(Observer == "kshiemrief", "kschiemrief", Observer)) # fix misspelling
 ```
 
 Check which Observer values do not exist in the observer_all table
@@ -150,6 +150,15 @@ Those are all bad entries for Observers, we can set them to NA
 ```{r}
 lemmings_good_obs <- lemmings_first_obs %>%
   mutate(Observer = ifelse(Observer %in% bad_observers, NA, Observer)) 
+```
+
+Update the observers table with all the good observers of lemmings & co
+
+```{r}
+observers_all %>%
+  filter(!Abbreviation %in% bad_observers) %>%
+  arrange(Abbreviation) %>%
+  write_csv(here(datadir_processed, "observers_all.csv"))
 ```
 
 
