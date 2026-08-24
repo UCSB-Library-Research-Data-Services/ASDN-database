@@ -1210,9 +1210,11 @@ Book_page,Year,Site,Nest_ID,Species,Observer,Date_found,how_found,Clutch_max,flo
 ,2005,bylo,05bylowrsang03,wrsa,ngruyer,2005-06-21,incidental,4,,
 ,2005,bylo,05bylowrsanl02,wrsa,nlecomte,2005-07-01,incidental,4,,
 ,2006,bylo,06byloagplc201,amgp,jbety,2006-06-22,incidental,4,5,float
+,2006,bylo,06byloagpllj01,amgp,ljolicoeur,2006-06-27,systematic search,4,,float
 ,2006,bylo,06byloagpllm01,amgp,lmckinnon,2006-06-25,systematic search,4,9,float
 ,2006,bylo,06byloagpllm02,amgp,lmckinnon,2006-06-30,systematic search,4,10,float
 ,2006,bylo,06byloagpllm03,amgp,lmckinnon,2006-06-30,systematic search,4,8,float
+,2006,bylo,06byloagplsd01,amgp,sdescamps,2006-07-03,incidental,4,,
 ,2006,bylo,06bylobasaagm02,basa,aguerettemontminy,2006-06-15,incidental,4,4,float
 ,2006,bylo,06bylobasaagm04,basa,aguerettemontminy,2006-06-19,incidental,4,14,float
 ,2006,bylo,06bylobasabl01,basa,blaliberte,2006-07-02,incidental,4,16,float
@@ -1226,6 +1228,7 @@ Book_page,Year,Site,Nest_ID,Species,Observer,Date_found,how_found,Clutch_max,flo
 ,2006,bylo,06bylobasalm07,basa,lmckinnon,2006-06-18,systematic search,4,5,float
 ,2006,bylo,06bylobasalm08,basa,lmckinnon,2006-06-19,systematic search,4,8,float
 ,2006,bylo,06bylobasalm09,basa,lmckinnon,2006-06-21,systematic search,3,,
+,2006,bylo,06bylobasalm10,basa,lmckinnon,2006-06-22,systematic search,4,,
 ,2006,bylo,06bylobasamg01,basa,mgrahamsauve,2006-06-20,incidental,4,,
 ,2006,bylo,06bylocrplc201,crpl,jbety,2006-06-21,incidental,4,2,float
 ,2006,bylo,06bylopesalj02,pesa,ljolicoeur,2006-07-02,systematic search,4,17,float
@@ -1250,9 +1253,12 @@ Book_page,Year,Site,Nest_ID,Species,Observer,Date_found,how_found,Clutch_max,flo
 ,2007,bylo,07byloagpllj02,amgp,ljolicoeur,2007-06-27,systematic search,4,6,float
 ,2007,bylo,07byloagpllj03,amgp,ljolicoeur,2007-07-01,systematic search,4,4,float
 ,2007,bylo,07byloagpllm1,amgp,lmckinnon,2007-06-28,systematic search,4,7,float
+,2007,bylo,07bylobasamad1,basa,mdoiron,2007-06-28,incidental,4,,
+,2007,bylo,07bylopesac201,pesa,lmckinnon,2007-06-27,systematic search,4,,
 ,2007,bylo,07bylorephc201,reph,abourbeaulemieux,2007-06-22,systematic search,4,,lay
 ,2007,bylo,07bylorephc202,reph,lmckinnon,2007-06-27,systematic search,4,3,float
 ,2007,bylo,07bylorephlm1,reph,lmckinnon,2007-06-23,systematic search,4,4,float
+,2007,bylo,07bylowrsac201,wrsa,lmckinnon,2007-07-02,systematic search,4,,
 ,2007,bylo,07bylowrsado01,wrsa,dootoova,2007-06-23,systematic search,4,1,float
 ,2007,bylo,07bylowrsajt02,wrsa,jtherrien,2007-07-01,incidental,4,,
 ,2008,bylo,08byloagplat01,amgp,atarroux,2008-07-11,incidental,4,,
@@ -1577,17 +1583,22 @@ Book_page,Year,Site,Nest_ID,Species,Observer,Date_found,how_found,Clutch_max,flo
 ,2013,bylo,13byloamgpdl06,amgp,dleandribreton,2013-07-05,incidental,4,5,float
 ,2013,bylo,13byloamgpdl07,amgp,dleandribreton,2013-07-05,incidental,4,16,float
 ,2013,bylo,13byloamgpdl08,amgp,dleandribreton,2013-07-06,incidental,4,18,float
+,2013,bylo,13byloamgpdl09,amgp,dleandribreton,2013-07-08,incidental,4,,
 ,2013,bylo,13byloamgpdl10,amgp,dleandribreton,2013-07-09,incidental,4,16,float
 ,2013,bylo,13byloamgpdl11,amgp,dleandribreton,2013-07-10,incidental,4,16,float
 ,2013,bylo,13byloamgpdl12,amgp,dleandribreton,2013-07-10,incidental,4,18,float
 ,2013,bylo,13byloamgpdl13,amgp,dleandribreton,2013-07-10,incidental,4,16,float
 ,2013,bylo,13byloamgpdl14,amgp,dleandribreton,2013-07-10,incidental,4,16,float
 ,2013,bylo,13byloamgpdl15,amgp,dleandribreton,2013-07-11,incidental,4,16,float
+,2013,bylo,13byloamgpdl16,amgp,dleandribreton,2013-07-11,incidental,4,,
 ,2013,bylo,13byloamgpdl17,amgp,dleandribreton,2013-07-11,incidental,4,16,float
+,2013,bylo,13byloamgpdl18,amgp,dleandribreton,2013-07-13,incidental,4,,float
 ,2013,bylo,13byloamgper01,amgp,ereed,2013-07-04,incidental,4,9,float
 ,2013,bylo,13byloamgper02,amgp,ereed,2013-07-05,incidental,4,12,float
+,2013,bylo,13byloamgper03,amgp,ereed,2013-06-29,incidental,4,,float
 ,2013,bylo,13byloamgper07,amgp,ereed,2013-07-08,incidental,4,14,float
 ,2013,bylo,13byloamgpfl01,amgp,flapierrepoulin,2013-07-01,incidental,4,17,float
+,2013,bylo,13byloamgpfl02,amgp,flapierrepoulin,2013-07-07,incidental,4,,
 ,2013,bylo,13byloamgpfs01,amgp,fsenezgagnon,2013-06-28,incidental,4,5,float
 ,2013,bylo,13byloamgpjb01,amgp,jbety,2013-06-27,incidental,4,9,float
 ,2013,bylo,13byloamgpjb02,amgp,jbety,2013-06-27,incidental,4,10,float
@@ -1638,6 +1649,8 @@ Book_page,Year,Site,Nest_ID,Species,Observer,Date_found,how_found,Clutch_max,flo
 ,2013,bylo,13bylobasaab01,basa,abeardsell,2013-06-19,incidental,4,0,float
 ,2013,bylo,13bylobasaar01,basa,arobillard,2013-06-23,incidental,4,0,float
 ,2013,bylo,13bylobasaar02,basa,arobillard,2013-06-23,incidental,4,0,float
+,2013,bylo,13bylobasaav01,basa,aveillette,2013-07-02,incidental,4,,
+,2013,bylo,13bylobasacd01,basa,cdoucet,2013-06-29,incidental,4,,float
 ,2013,bylo,13bylobasacd02,basa,cdoucet,2013-07-01,incidental,4,16,float
 ,2013,bylo,13bylobasafs02,basa,fsenezgagnon,2013-06-14,incidental,4,3,float
 ,2013,bylo,13bylobasafs04,basa,fsenezgagnon,2013-06-15,incidental,4,1,float
@@ -1650,10 +1663,14 @@ Book_page,Year,Site,Nest_ID,Species,Observer,Date_found,how_found,Clutch_max,flo
 ,2013,bylo,13bylobasafs11,basa,fsenezgagnon,2013-06-25,incidental,4,3,float
 ,2013,bylo,13bylobasaga01,basa,gmontpetitallard,2013-06-18,incidental,4,4,float
 ,2013,bylo,13bylobasahm01,basa,hmeltofte,2013-06-19,incidental,4,8,float
+,2013,bylo,13bylobasajb01,basa,jbety,2013-07-03,incidental,4,,
+,2013,bylo,13bylobasajb02,basa,jbety,2013-07-03,incidental,4,,
 ,2013,bylo,13bylobasajb03,basa,jbety,2013-07-07,incidental,3,,hatch
 ,2013,bylo,13bylobasajf01,basa,jfrenette,2013-06-17,incidental,4,14,float
 ,2013,bylo,13bylobasajl01,basa,jflamarre,2013-06-15,incidental,4,3,float
 ,2013,bylo,13bylobasapr02,basa,proyerboutin,2013-07-01,incidental,4,0,float
+,2013,bylo,13bylobasapr03,basa,proyerboutin,2013-07-02,incidental,4,,
+,2013,bylo,13bylobbpldl01,bbpl,dleandribreton,2013-07-08,incidental,4,,
 ,2013,bylo,13bylobbpldl02,bbpl,dleandribreton,2013-07-08,incidental,4,,hatch
 ,2013,bylo,13bylobbpljb01,bbpl,jbety,2013-06-28,incidental,4,7,float
 ,2013,bylo,13bylobbpljb02,bbpl,jbety,2013-06-30,incidental,4,13,float
@@ -1661,23 +1678,30 @@ Book_page,Year,Site,Nest_ID,Species,Observer,Date_found,how_found,Clutch_max,flo
 ,2013,bylo,13bylobbplpr02,bbpl,proyerboutin,2013-07-15,incidental,4,17,float
 ,2013,bylo,13bylobbplpr03,bbpl,proyerboutin,2013-07-16,incidental,3,16,float
 ,2013,bylo,13bylocrpldl01,crpl,dleandribreton,2013-07-05,incidental,4,16,float
+,2013,bylo,13bylocrpldl02,crpl,dleandribreton,2013-07-08,incidental,1,,
 ,2013,bylo,13bylocrpljl01,crpl,jflamarre,2013-06-30,incidental,4,12,float
 ,2013,bylo,13bylocrplpr01,crpl,proyerboutin,2013-06-15,incidental,4,1,float
 ,2013,bylo,13bylopesacd01,pesa,cdoucet,2013-06-28,incidental,4,8,float
 ,2013,bylo,13bylopesagl01,pesa,gletourneau,2013-06-27,incidental,4,1,float
 ,2013,bylo,13bylopesajl01,pesa,jlamarre,2013-06-21,incidental,3,,
 ,2013,bylo,13bylopesanb01,pesa,nbradette,2013-07-17,incidental,3,,
+,2013,bylo,13bylorephdl01,reph,dleandribreton,2013-07-15,incidental,3,,
 ,2013,bylo,13bylorutujb01,rutu,jbety,2013-06-28,incidental,4,6,float
 ,2013,bylo,13bylowrsadf01,wrsa,dfauteux,2013-06-20,incidental,4,6,float
 ,2013,bylo,13bylowrsadl01,wrsa,dleandribreton,2013-06-20,incidental,3,5,float
 ,2013,bylo,13bylowrsadl02,wrsa,dleandribreton,2013-06-29,incidental,3,14,float
 ,2013,bylo,13bylowrsadl03,wrsa,dleandribreton,2013-06-29,incidental,4,4,float
+,2013,bylo,13bylowrsadl04,wrsa,dleandribreton,2013-07-04,incidental,4,,
 ,2013,bylo,13bylowrsadl05,wrsa,dleandribreton,2013-07-05,incidental,4,15,float
+,2013,bylo,13bylowrsadl06,wrsa,dleandribreton,2013-07-06,incidental,4,,
+,2013,bylo,13bylowrsadl07,wrsa,dleandribreton,2013-07-07,incidental,4,,
 ,2013,bylo,13bylowrsafs01,wrsa,fsenezgagnon,2013-07-05,incidental,3,15,float
 ,2013,bylo,13bylowrsajl01,wrsa,jlamarre,2013-06-15,incidental,2,0,float
 ,2013,bylo,13bylowrsajl02,wrsa,jlamarre,2013-06-20,incidental,4,3,float
 ,2013,bylo,13bylowrsajl03,wrsa,jflamarre,2013-06-29,incidental,4,6,float
 ,2013,bylo,13bylowrsajl04,wrsa,jflamarre,2013-07-15,incidental,3,,hatch
+,2013,bylo,13bylowrsapr01,wrsa,proyerboutin,2013-07-04,incidental,4,,
+,2013,bylo,13bylowrsapr02,wrsa,proyerboutin,2013-07-05,incidental,4,,
 ,2014,bylo,14byloamgpar01,amgp,arobillard,2014-07-07,incidental,4,0,float
 ,2014,bylo,14byloamgpdl05,amgp,dleandribreton,2014-06-20,incidental,4,1,float
 ,2014,bylo,14byloamgpdl06,amgp,dleandribreton,2014-06-20,incidental,1,0,float
@@ -1698,6 +1722,7 @@ Book_page,Year,Site,Nest_ID,Species,Observer,Date_found,how_found,Clutch_max,flo
 ,2014,bylo,14byloamgpdl21,amgp,dleandribreton,2014-07-05,incidental,4,4,float
 ,2014,bylo,14byloamgpdl22,amgp,dleandribreton,2014-07-06,incidental,4,3,float
 ,2014,bylo,14byloamgpdl23,amgp,dleandribreton,2014-07-07,incidental,4,18,float
+,2014,bylo,14byloamgpdl24,amgp,dleandribreton,2014-07-09,incidental,4,,
 ,2014,bylo,14byloamgpdl25,amgp,dleandribreton,2014-07-11,incidental,4,16,float
 ,2014,bylo,14byloamgper01,amgp,ereed,2014-06-29,incidental,4,12,float
 ,2014,bylo,14byloamgper02,amgp,ereed,2014-06-28,incidental,4,0,float
@@ -1708,6 +1733,7 @@ Book_page,Year,Site,Nest_ID,Species,Observer,Date_found,how_found,Clutch_max,flo
 ,2014,bylo,14byloamgper07,amgp,ereed,2014-07-02,incidental,4,18,float
 ,2014,bylo,14byloamgpfd01,amgp,fdulude,2014-06-24,incidental,4,0,float
 ,2014,bylo,14byloamgpfd02,amgp,fdulude,2014-06-24,incidental,4,9,float
+,2014,bylo,14byloamgpfl02,amgp,flapierrepoulin,2014-06-17,incidental,4,,
 ,2014,bylo,14byloamgpfl03,amgp,flapierrepoulin,2014-06-30,incidental,4,0,float
 ,2014,bylo,14byloamgpjb01,amgp,jbety,2014-06-28,incidental,4,9,float
 ,2014,bylo,14byloamgpjb02,amgp,jbety,2014-06-30,incidental,4,5,float
@@ -1763,6 +1789,8 @@ Book_page,Year,Site,Nest_ID,Species,Observer,Date_found,how_found,Clutch_max,flo
 ,2014,bylo,14byloamgppr20,amgp,proyerboutin,2014-07-07,incidental,4,16,float
 ,2014,bylo,14byloamgppr21,amgp,proyerboutin,2014-07-07,incidental,4,16,float
 ,2014,bylo,14byloamgppr22,amgp,proyerboutin,2014-07-07,incidental,4,16,float
+,2014,bylo,14byloamgppr23,amgp,proyerboutin,2014-07-09,incidental,4,,
+,2014,bylo,14byloamgppr24,amgp,proyerboutin,2014-07-09,incidental,4,,hatch
 ,2014,bylo,14byloamgppr25,amgp,proyerboutin,2014-07-11,incidental,4,16,float
 ,2014,bylo,14byloamgppr26,amgp,proyerboutin,2014-07-11,incidental,4,16,float
 ,2014,bylo,14byloamgppr27,amgp,proyerboutin,2014-07-11,incidental,4,16,float
@@ -1794,6 +1822,9 @@ Book_page,Year,Site,Nest_ID,Species,Observer,Date_found,how_found,Clutch_max,flo
 ,2014,bylo,14bylobasajl01,basa,jlamarre,2014-06-14,incidental,4,1,float
 ,2014,bylo,14bylobasamt01,basa,mtremblay,2014-06-18,incidental,4,7,float
 ,2014,bylo,14bylobasamt02,basa,mtremblay,2014-06-28,incidental,4,0,float
+,2014,bylo,14bylobasapr01,basa,proyerboutin,2014-06-24,incidental,4,,
+,2014,bylo,14bylobasapr02,basa,proyerboutin,2014-06-26,incidental,4,,
+,2014,bylo,14bylobasapr03,basa,proyerboutin,2014-07-08,incidental,4,,
 ,2014,bylo,14bylobasavm01,basa,vmarmillot,2014-07-06,incidental,4,0,float
 ,2014,bylo,14bylobasays02,basa,yseyer,2014-06-20,incidental,4,0,float
 ,2014,bylo,14bylobasays03,basa,yseyer,2014-07-06,incidental,,0,float
@@ -1808,6 +1839,7 @@ Book_page,Year,Site,Nest_ID,Species,Observer,Date_found,how_found,Clutch_max,flo
 ,2014,bylo,14bylobbplpr05,bbpl,proyerboutin,2014-07-12,incidental,4,16,float
 ,2014,bylo,14bylobbplpr06,bbpl,proyerboutin,2014-07-13,incidental,4,0,float
 ,2014,bylo,14bylobbplpr07,bbpl,proyerboutin,2014-07-13,incidental,4,18,float
+,2014,bylo,14bylobbsadl01,bbsa,dleandribreton,2014-07-16,incidental,4,,hatch
 ,2014,bylo,14bylobbsajl01,bbsa,jflamarre,2014-06-30,incidental,4,9,float
 ,2014,bylo,14bylocrpldl01,crpl,dleandribreton,2014-06-19,incidental,4,13,float
 ,2014,bylo,14bylocrpldl02,crpl,dleandribreton,2014-06-19,incidental,3,1,float
@@ -1823,6 +1855,9 @@ Book_page,Year,Site,Nest_ID,Species,Observer,Date_found,how_found,Clutch_max,flo
 ,2014,bylo,14bylocrpldl12,crpl,dleandribreton,2014-07-05,incidental,4,11,float
 ,2014,bylo,14bylocrpldl13,crpl,dleandribreton,2014-07-07,incidental,4,0,float
 ,2014,bylo,14bylocrpldl14,crpl,dleandribreton,2014-07-07,incidental,4,18,float
+,2014,bylo,14bylocrpldl15,crpl,dleandribreton,2014-07-07,incidental,4,,hatch
+,2014,bylo,14bylocrpldl16,crpl,dleandribreton,2014-07-07,incidental,4,,hatch
+,2014,bylo,14bylocrpldl17,crpl,dleandribreton,2014-07-09,incidental,4,,
 ,2014,bylo,14bylocrpljb01,crpl,jbety,2014-07-09,incidental,3,10,float
 ,2014,bylo,14bylocrpljt01,crpl,jtherien,2014-07-13,incidental,2,0,float
 ,2014,bylo,14bylopesaal01,pesa,alauzon,2014-06-27,incidental,4,0,float
@@ -6384,12 +6419,15 @@ e.51,2014,nome,14nomewesa157,wesa,dhodkinson,2014-06-16,searcher,3,7,float
 ,2005,bylo,05bylowrsamn02,wrsa,mgrahamsauve,2005-06-27,incidental,4,13,float
 ,2005,bylo,05bylowrsanl01,wrsa,nlecomte,2005-06-29,incidental,4,15,float
 ,2005,bylo,05bylowrsajl01,wrsa,jlefebvre,2005-06-29,incidental,4,14,float
+,2005,bylo,05bylowrsabl09,wrsa,blaliberte,2005-07-05,systematic search,4,,hatch
+,2005,bylo,05bylowrsabl10,wrsa,blaliberte,2005-07-05,systematic search,4,,hatch
 ,2005,bylo,05bylowrsamg007,wrsa,mgrahamsauve,2005-06-30,incidental,4,15,float
 ,2005,bylo,05bylowrsajeanette,wrsa,lmckinnon,2005-07-07,systematic search,4,17,float
 ,2005,bylo,05bylowrsanl03,wrsa,nlecomte,2005-07-03,incidental,4,,
 ,2006,bylo,06bylowrsalm02,wrsa,lmckinnon,2006-06-21,systematic search,4,1,float
 ,2006,bylo,06bylowrsalj02,wrsa,ljolicoeur,2006-06-24,systematic search,4,8,float
 ,2006,bylo,06bylowrsaagm01,wrsa,aguerettemontminy,2006-06-24,incidental,4,7,float
+,2006,bylo,06bylowrsalj04,wrsa,ljolicoeur,2006-06-30,systematic search,4,,float
 ,2006,bylo,06bylowrsahk01,wrsa,hkristenson,2006-06-29,incidental,4,15,float
 ,2007,bylo,07bylowrsalj03,wrsa,ljolicoeur,2007-06-28,systematic search,4,15,float
 ,2007,bylo,07bylowrsalm01,wrsa,lmckinnon,2007-06-18,systematic search,4,,lay
@@ -8800,6 +8838,7 @@ c.01,2012,nome,12nome12wesadh01,wesa,dhodkinson,2012-05-28,searcher,4,,lay
 ,2006,bylo,06bylobasaagm03,basa,aguerettemontminy,2006-06-19,incidental,4,,float
 ,2006,bylo,06bylobasalj04,basa,ljolicoeur,2006-06-12,systematic search,4,,lay
 ,2005,bylo,05bylobasamg04,basa,mgrahamsauve,2005-06-27,incidental,4,15,float
+,2005,bylo,05bylobasamn01,basa,mgrahamsauve,2005-06-27,incidental,4,,
 ,2005,bylo,05bylobasabl08,basa,blaliberte,2005-07-03,systematic search,4,,hatch
 ,2006,bylo,06bylobasalm02,basa,lmckinnon,2006-06-12,systematic search,4,2,float
 ,2006,bylo,06bylobasalm05,basa,lmckinnon,2006-06-16,systematic search,4,3,float
