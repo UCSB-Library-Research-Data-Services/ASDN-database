@@ -149,7 +149,7 @@ Those are all bad entries for Observers, we can set them to NA
 
 ```{r}
 lemmings_good_obs <- lemmings_first_obs %>%
-  mutate(Observer = ifelse(Observer %in% bad_observers, NA, Observer)) 
+  mutate(Observer = ifelse(Observer %in% pull(bad_observers), NA, Observer)) 
 ```
 
 Update the observers table with all the good observers of lemmings & co
