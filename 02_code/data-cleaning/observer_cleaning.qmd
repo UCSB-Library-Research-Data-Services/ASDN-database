@@ -24,6 +24,11 @@ nests_file <- "bird_nests.csv"
 
 ```
 
+Load the Observers from the table that was derived from the cleaned camp assignment table (see main_data-cleaning.ipynb)
+
+```{r}
+observers_camp <- read_csv(here(datadir_processed, observers_file))
+```
 
 
 ## Lemmings Observers
@@ -51,13 +56,8 @@ lemmings_obs <- lemmings_data %>%
   distinct(Observer)
 ```
 
-Load the Observers from the table that was derived from the cleaned camp assignment table (see main_data-cleaning.ipynb)
 
-```{r}
-observers_camp <- read_csv(here(datadir_processed, observers_file))
-```
-
-Let's see the observers that are not listed in the camp assignment  table
+Let's see the observers that are not listed in the camp assignment table
 
 ```{r}
 anti_join(lemmings_obs, observers_camp, join_by(Observer == Abbreviation)) %>%
@@ -116,7 +116,7 @@ nests_data %>%
 Let's see the observers that are not listed in the camp assignment  table
 
 ```{r}
-anti_join(nests_data, observers_camp, join_by(Observer == Abbreviation)) %>%
+anti_join(nests_data, observers_camppred, join_by(Observer == Abbreviation)) %>%
   distinct(Observer) %>% 
   arrange(Observer)
 ```
@@ -134,7 +134,7 @@ Export the csv to edit manually (need to invent names)
 ```{r}
 missing_nestobs <- nests_data %>%
   distinct(Observer) %>%
-  full_join(observers_camp, join_by(Observer == Abbreviation)) %>% 
+  full_join(observers_camppred, join_by(Observer == Abbreviation)) %>% 
   arrange(Observer) %>%
   filter(is.na(Name)) %>%
   rename(Abbreviation = "Observer")
@@ -154,7 +154,7 @@ observers_nestfixed <- read_csv(here(datadir_processed, "nest_observers_fixed.cs
 Merge with the existing camp observer table:
 
 ```{r}
-observers_all <- bind_rows(observers_predfixed, observers_nestfixed)
+observers_all <- bind_rows(observers_camppred, observers_nestfixed)
 ```
 
 Check for duplicates
