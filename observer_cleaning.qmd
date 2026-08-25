@@ -1,0 +1,187 @@
+---
+title: "Observers"
+format: html
+---
+
+```{r}
+#| message: false  
+
+# Libraries
+library(tidyverse)
+library(here)
+
+
+# file names
+datadir_raw <- "01_data/data-raw/"
+
+datadir_processed <- "01_data/data-processed/"
+
+lemmings_file <- "ASDN_Daily_pred_lemm.csv"
+
+observers_file <- "observers.csv"
+
+nests_file <- "bird_nests.csv"
+
+```
+
+
+
+## Lemmings Observers
+
+Import the data
+
+```{r}
+# Import the species
+lemmings_data <- read_csv(here(datadir_raw, lemmings_file))
+```
+
+What are the distincts observers:
+
+```{r}
+lemmings_data %>% 
+  distinct(Observer)
+```
+
+There are sometimes many observers listed, let's split this:
+
+```{r}
+lemmings_obs <- lemmings_data %>%
+  separate_rows(Observer, sep="[,+/]") %>%  # split multiple entries per cell into separate rows
+  mutate(Observer = trimws(Observer)) %>%  # some observers have leading spaces
+  distinct(Observer)
+```
+
+Load the Observers from the table that was derived from the cleaned camp assignment table (see main_data-cleaning.ipynb)
+
+```{r}
+observers_camp <- read_csv(here(datadir_processed, observers_file))
+```
+
+Let's see the observers that are not listed in the camp assignment  table
+
+```{r}
+anti_join(lemmings_obs, observers_camp, join_by(Observer == Abbreviation)) %>%
+  distinct(Observer)
+```
+
+Let's produce a list of observers who do not yet exists in our observer table derived from the camp assignment:
+
+```{r}
+missing_observers <- lemmings_obs %>%
+  full_join(observers_camp, join_by(Observer == Abbreviation), keep = TRUE) %>% 
+  arrange(Observer) %>%
+  filter(is.na(Abbreviation)) 
+```
+
+Export the csv to edit manually (need to invent names)
+
+```{r}
+write_csv(missing_observers, here(datadir_processed, "lemming_observers_missing.csv"))
+```
+
+
+Manually editing this file in Excel:
+
+- inventing names that matched the initial + last name logic for the abreviation
+- dropped rows containing words like: all, crew, weather, ...
+
+
+Import the cleaned observer list
+
+```{r}
+observers_predfixed <- read_csv(here(datadir_processed, "lemming_observers_fixed.csv"))
+```
+
+Merge with the existing camp observer table:
+
+```{r}
+observers_camppred <- bind_rows(observers_camp, observers_predfixed)
+```
+
+
+## Nests Observers
+
+```{r}
+# Import the species
+nests_data <- read_csv(here(datadir_processed, nests_file))
+```
+
+What are the distincts observers:
+
+```{r}
+nests_data %>% 
+  distinct(Observer)
+```
+
+Let's see the observers that are not listed in the camp assignment  table
+
+```{r}
+anti_join(nests_data, observers_camp, join_by(Observer == Abbreviation)) %>%
+  distinct(Observer) %>% 
+  arrange(Observer)
+```
+
+Some are clearly breaking the rule of the First Name initial + last name, however it is still quite a long list!
+
+Will export and edit by hand:
+
+- remove any abbreviation <=3 and all capitalized (probably initials)
+- anything with crew, all, ....
+- Invent names for the remaning entries
+
+Export the csv to edit manually (need to invent names)
+
+```{r}
+missing_nestobs <- nests_data %>%
+  distinct(Observer) %>%
+  full_join(observers_camp, join_by(Observer == Abbreviation)) %>% 
+  arrange(Observer) %>%
+  filter(is.na(Name)) %>%
+  rename(Abbreviation = "Observer")
+```
+
+```{r}
+write_csv(missing_nestobs, here(datadir_processed, "nest_observers_missing.csv"))
+```
+
+
+Import the cleaned observer list:
+
+```{r}
+observers_nestfixed <- read_csv(here(datadir_processed, "nest_observers_fixed.csv"))
+```
+
+Merge with the existing camp observer table:
+
+```{r}
+observers_all <- bind_rows(observers_predfixed, observers_nestfixed)
+```
+
+Check for duplicates
+
+```{r}
+observers_all %>%
+  group_by(Abbreviation) %>% 
+  filter(n()>1) %>% 
+  arrange(Abbreviation)
+```
+
+Let's keep the first one:
+
+```{r}
+observers_nodup <- observers_all %>%
+  group_by(Abbreviation) %>% 
+  slice(1) %>%
+  ungroup()
+```
+
+
+Write the observers table with all the good observers of lemmings & nests:
+
+```{r}
+observers_nodup %>%
+  arrange(Abbreviation) %>%
+  write_csv(here(datadir_processed, "observers_all.csv"))
+```
+
+
