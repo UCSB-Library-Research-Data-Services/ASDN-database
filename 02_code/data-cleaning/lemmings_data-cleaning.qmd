@@ -74,56 +74,10 @@ It seems that the Location field is not well standardized and might not add much
 
 #### Observers
 
-```{r}
-lemmings_data %>% 
-  distinct(Observer)
-```
-
-Load the Observers from the table that was derived from the Bird nest table
+Import the cleaned observer list
 
 ```{r}
-observers_nests <- read_csv(here(datadir_processed, observers_file))
-```
-Let's see the observers that are not listed in the bird nest observation table
-
-```{r}
-anti_join(lemmings_data, observers_nests, join_by(Observer == Abbreviation)) %>%
-  distinct(Observer)
-```
-
-We have many occurrence of multiple observers listed in one cell. We will take the same approach as for the bird nests table and arbitrarily keep only the first observer.  However for now, let's split those multiple entries into separate row and produce a list of observers who do not yet exists in our observer table derived from the nest observation:
-
-```{r}
-missing_observers <- lemmings_data %>%
-  separate_rows(Observer, sep="[,+/]") %>%  # split multiple entries per cell into separate rows
-  mutate(Observer = trimws(Observer)) %>%  # some observers have leading spaces
-  distinct(Observer) %>%
-  full_join(observers_nests, join_by(Observer == Abbreviation), keep = TRUE) %>% 
-  arrange(Observer) %>%
-  filter(is.na(Abbreviation))
-```
-
-Export the csv to edit manually (need to invent names)
-
-```{r}
-write_csv(missing_observers, here(datadir_processed, "lemming_observers_missing.csv"))
-```
-
-
-Manually editing this file in Excel:
-
-- inventing names that matched the initial + last name logic for the abreviation
-- dropped rows containing words like: all, crew, weather, ...
-
-
-```{r}
-observers_fixed <- read_csv(here(datadir_processed, "lemming_observers_fixed.csv"))
-```
-
-Merge with the exisintg oberser table:
-
-```{r}
-observers_all <- bind_rows(observers_nests, observers_fixed)
+observers_all <- read_csv(here(datadir_processed, "observers_all.csv"))
 ```
 
 
@@ -139,7 +93,8 @@ Check which Observer values do not exist in the observer_all table
 
 ```{r}
 bad_observers <- lemmings_first_obs %>%
-anti_join(observers_all, join_by(Observer == Abbreviation)) %>%
+left_join(observers_all, join_by(Observer == Abbreviation)) %>%
+  filter(is.na(Name)) %>%
   distinct(Observer)
 
 bad_observers
@@ -152,14 +107,7 @@ lemmings_good_obs <- lemmings_first_obs %>%
   mutate(Observer = ifelse(Observer %in% pull(bad_observers), NA, Observer)) 
 ```
 
-Update the observers table with all the good observers of lemmings & co
 
-```{r}
-observers_all %>%
-  filter(!Abbreviation %in% bad_observers) %>%
-  arrange(Abbreviation) %>%
-  write_csv(here(datadir_processed, "observers_all.csv"))
-```
 
 
 #### Species
