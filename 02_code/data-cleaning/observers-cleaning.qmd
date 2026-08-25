@@ -185,3 +185,25 @@ observers_nodup %>%
 ```
 
 
+## Update the bird nest data to drop rows with bad observer abbreviations
+
+
+```{r}
+nests_data_obsname <- left_join(nests_data, observers_nodup, join_by(Observer == Abbreviation)) %>%
+  filter(!is.na(Name))
+```
+
+Loosing about 200 rows
+
+```{r}
+nests_data_obsname %>%
+  select(-Name) %>%   # not needed
+  write_csv(here(datadir_processed, "bird_nests_obsname.csv"))
+```
+
+
+
+
+
+
+
