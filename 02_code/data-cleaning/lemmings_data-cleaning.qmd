@@ -117,10 +117,10 @@ lemmings_good_obs %>%
   distinct(Species)
 ```
 
-That's a lot of unique species... probaly more any predators than just lemmings
+That's a lot of unique species... probably more any predators than just lemmings!
 
 
-Let's see if those sepcies are all in our species table"
+Let's see if those species are all already in our species table:
 
 ```{r}
 species_data <- read_csv(here(datadir_processed, "species.csv"))
@@ -177,7 +177,7 @@ tt %>% filter(Year_comp == FALSE) %>% select(Year, Date, Date2, Year2, Year_comp
 tt %>% filter(is.na(Date2)) %>% select(Year, Date, Date2, Year2, Year_comp)
 ```
 
-No errors, although `as_date()` would have guessed the wrong format. Let's implement the change:
+No errors, although `as_date()` would have guessed the wrong date format! Let's implement the change:
 
 ```{r}
 lemmings_good_date <- lemmings_good_sp %>% 
@@ -189,10 +189,10 @@ Let's write the cleaned Lemmings table to a csv file:
 
 ```{r}
 lemmings_good_date %>%
-  select(-Location, -Notes) %>%    # no valuable info in those columns
+  select(-Location, -Notes) %>%   # no valuable info in those columns
   filter(!is.na(Start_time)) %>%  # will have to be part of the primary key (loosing 44 entries)
-  filter(!is.na(End_time)) %>%  # will have to be part of the primary key (loosing no entries)
-  distinct(Year, Site, Date, Start_time, End_time, Species, .keep_all = TRUE) %>% # remove some duplicates that will mess up the primary keys
+  filter(!is.na(End_time)) %>%    # will have to be part of the primary key (loosing no entries)
+  distinct(Year, Site, Date, Start_time, End_time, Species, .keep_all = TRUE) %>%  # remove some duplicates that will mess up the primary keys
   write_csv(here(datadir_processed, "lemmings_fixed.csv"))
 ```
 
