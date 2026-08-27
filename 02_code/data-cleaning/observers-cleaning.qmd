@@ -151,6 +151,7 @@ Import the cleaned observer list:
 observers_nestfixed <- read_csv(here(datadir_processed, "nest_observers_fixed.csv"))
 ```
 
+
 Merge with the existing camp observer table:
 
 ```{r}
@@ -187,6 +188,18 @@ observers_nodup %>%
 
 ## Update the bird nest data to drop rows with bad observer abbreviations
 
+There were two cases with a period separating the first initial and the last name. It was decided when amnually editing nest observers to update them removing the period to match the abbreviation rule:
+
+```{r}
+nests_data <- nests_data %>%
+  mutate(Observer = replace_values(Observer, 
+                                  "H.Specht" ~ "hspecht",
+                                  "d.taylor" ~ "dtaylor",
+                                  "eaba_crew" ~ "mchown"    # arbitrarily pick an observer that was at this site at this time period to not loose 112 rows
+                 )
+         )
+```
+
 
 ```{r}
 nests_data_obsname <- left_join(nests_data, observers_nodup, join_by(Observer == Abbreviation)) %>%
@@ -194,6 +207,8 @@ nests_data_obsname <- left_join(nests_data, observers_nodup, join_by(Observer ==
 ```
 
 Loosing about 200 rows
+
+
 
 ```{r}
 nests_data_obsname %>%
