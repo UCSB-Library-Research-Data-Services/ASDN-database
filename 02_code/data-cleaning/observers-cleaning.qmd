@@ -216,20 +216,39 @@ nests_data_obsname %>%
 ```
 
 
-
 Since we lost rows in the nests table, we might have lost some nest_id as well. We need to check again that there are no nest_ids in the eggs table that are not in the nest table.
 
 
-Le
 ```{r}
-
-(unique(nests_data$Nest_ID) %in% unique(nests_data_obsname$Nest_ID))
+sum(!(unique(nests_data$Nest_ID) %in% unique(nests_data_obsname$Nest_ID)))
 ```
+
+It seems ~ 1,800 Nest_ID were lost in the cleaning. Let's investigate how many row does that correspond to in the egg table.
 
 ```{r}
 eggs_data <-  read_csv(here(datadir_processed, "bird_eggs.csv"))
 ```
 
 
+```{r}
+sum(!(unique(eggs_data$Nest_ID) %in% unique(nests_data_obsname$Nest_ID)))
+```
 
+Let's look at the corresponding rows:
+
+```{r}
+eggs_data %>%
+  filter(!(Nest_ID %in% unique(nests_data_obsname$Nest_ID))) %>%
+  View()
+```
+
+We are loosing 500 rows.
+
+Let's save this data
+
+```{r}
+eggs_data %>%
+  filter((Nest_ID %in% unique(nests_data_obsname$Nest_ID))) %>%
+  write_csv(here(datadir_processed, "bird_eggs_observers_matched.csv"))
+```
 
