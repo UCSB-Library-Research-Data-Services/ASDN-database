@@ -127,7 +127,7 @@ Will export and edit by hand:
 
 - remove any abbreviation <=3 and all capitalized (probably initials)
 - anything with crew, all, ....
-- Invent names for the remaning entries
+- Invent names for the renaming entries
 
 Export the csv to edit manually (need to invent names)
 
@@ -206,18 +206,29 @@ nests_data_obsname <- left_join(nests_data, observers_nodup, join_by(Observer ==
   filter(!is.na(Name))
 ```
 
-Loosing about 200 rows
-
+Loosing about 2000 rows :/
 
 
 ```{r}
 nests_data_obsname %>%
   select(-Name) %>%   # not needed
-  write_csv(here(datadir_processed, "bird_nests_obsname.csv"))
+  write_csv(here(datadir_processed, "bird_nests_abbrev.csv"))
 ```
 
 
 
+Since we lost rows in the nests table, we might have lost some nest_id as well. We need to check again that there are no nest_ids in the eggs table that are not in the nest table.
+
+
+Le
+```{r}
+
+(unique(nests_data$Nest_ID) %in% unique(nests_data_obsname$Nest_ID))
+```
+
+```{r}
+eggs_data <-  read_csv(here(datadir_processed, "bird_eggs.csv"))
+```
 
 
 
