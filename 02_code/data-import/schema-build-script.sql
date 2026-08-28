@@ -63,7 +63,7 @@ CREATE TABLE Bird_nests (
     FOREIGN KEY (Species) REFERENCES Species (Code),
     FOREIGN KEY (Observer) REFERENCES Personnel (Abbreviation)
 );
-COPY Bird_nests FROM '../01_data/data-processed/bird_nests.csv' (header TRUE, NULL "NA");
+COPY Bird_nests FROM '../01_data/data-processed/bird_nests_abbrev.csv' (header TRUE, NULL "NA");
 
 CREATE TABLE Bird_eggs (
     Book_page VARCHAR,
@@ -77,7 +77,7 @@ CREATE TABLE Bird_eggs (
     FOREIGN KEY (Site) REFERENCES Site (Code),
     FOREIGN KEY (Nest_ID) REFERENCES Bird_nests (Nest_ID)
 );
-COPY Bird_eggs FROM '../01_data/data-processed/bird_eggs.csv' (header TRUE);
+COPY Bird_eggs FROM '../01_data/data-processed/bird_eggs_observers_matched.csv' (header TRUE);
 
 
 CREATE TABLE Predators (
