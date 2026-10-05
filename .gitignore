@@ -3,4 +3,9 @@
 .RData
 .Ruserdata
 
+# MacOS
 **.DS_Store
+
+# Quarto
+**/_site/
+**/.quarto
