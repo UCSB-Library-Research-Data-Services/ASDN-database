@@ -19,7 +19,7 @@ style="width:30.0%" alt="Shorebird picture, copyright New York Times" />
 
 ## Scientific Background
 
-Shorebird trend analyses indicate that many North America shorebirds are declining, but we do not know why (Morrison et al. 2006). **The goal of the Arctic Shorebird Demographic Network is to collaboratively conuct demographic studies on several shorebird focal species that will help determine factors limiting their population size**. The Network will measure demographic rates such as adult apparent survival, annual productivity, population age-structure, etc. on the Arctic breeding grounds. Additionally, site-specific ecological and environmental variables (e.g. food resources, prey and predator abundance, weather, etc.) that influence demographic rates and are influenced by climate change and other anthropogenic forces will be measured and incorporated into the analyses.
+Shorebird trend analyses indicate that many North America shorebirds are declining, but we do not know why (Morrison et al. 2006). **The goal of the Arctic Shorebird Demographic Network is to collaboratively conduct demographic studies on several shorebird focal species that will help determine factors limiting their population size**. The Network will measure demographic rates such as adult apparent survival, annual productivity, population age-structure, etc. on the Arctic breeding grounds. Additionally, site-specific ecological and environmental variables (e.g. food resources, prey and predator abundance, weather, etc.) that influence demographic rates and are influenced by climate change and other anthropogenic forces will be measured and incorporated into the analyses.
 
 ### Study Sites
 
